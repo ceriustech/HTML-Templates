@@ -1,0 +1,49 @@
+/** Hero Section **/
+.hero_section {
+    position: relative;
+    
+}
+
+.flex_container_hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -ms-flex-direction: column; 
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; 
+}
+
+.hero_text h1{
+    color: #000;
+    font-family: Gilroy;
+    font-size: 40px;
+    font-weight: 800;
+    height: 49px;
+    line-height: 49px;
+    position: absolute;
+    bottom: 55%;
+}
+.hero_text p {
+    color: #000;
+    font-family: Gilroy;
+    font-size: 16px;
+    height: 120px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    position: absolute;
+    bottom: 25%;
+}
+
+/** Trending Section **/
+
+.trending_section {
+    margin-top: 40px;
+}
+
