@@ -28,7 +28,8 @@
     height: 49px;
     line-height: 49px;
     position: absolute;
-    bottom: 55%;
+    top: 25%;
+    
 }
 .hero_text p {
     color: #000;
@@ -38,7 +39,7 @@
     letter-spacing: 1px;
     line-height: 24px;
     position: absolute;
-    bottom: 25%;
+    top: 42%;
 }
 
 /** Trending Section **/
@@ -47,3 +48,9 @@
     margin-top: 40px;
 }
 
+.trend_row_1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+}
