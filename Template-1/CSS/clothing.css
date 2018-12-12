@@ -1,3 +1,4 @@
+/*** Slider Styles ***/
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -7,16 +8,13 @@ html {
   box-sizing: inherit;
 }
 
-
-img {
-  width: 100%;
-  height: auto;
-  padding: 5px;
-}
-
 h2 {
   text-align: center;
   padding-bottom: 1em;
+}
+
+.carousel_2 img {
+    width: 100%; 
 }
 
 .slick-dots {
@@ -81,4 +79,10 @@ h2 {
   .next {
     display: none !important;
   }
+}
+
+/*** Clothing Grid Section***/
+
+.display_grid_section {
+    margin-top: 50px;
 }
