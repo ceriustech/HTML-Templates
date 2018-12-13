@@ -3,13 +3,40 @@
 	padding: 0 40px 30px 40px; 
 }
 
+.carousel_padding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.clothing_carousel_caption h3 {
+    color: #fff; 
+    font-family: Gilroy;
+    font-size: 1.0em;
+    font-weight: 800;
+    margin-left: 5px;
+    position: absolute;
+    bottom: 3%;
+}
+
+.carousel_margin {
+    margin-top: 30px;
+}
+
+.carousel_image {
+    border-radius: 6px;
+}
+
 /* Custom Arrow */
 .prev {
   color: #999;
+  font-size: 1.5em;
   position: absolute;
   top: 38%;
-  left: -2em;
-  font-size: 1.5em;
+  left: 4em;
 }
 
 .prev :hover {
@@ -19,10 +46,10 @@
 
 .next {
   color: #999;
+  font-size: 1.5em;
   position: absolute;
   top: 38%;
-  right: -2em;
-  font-size: 1.5em;
+  right: 4em;
 }
 
 .next :hover {
