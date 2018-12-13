@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/carousel.css">
   <link rel="stylesheet" href="CSS/brands.css">
   <link rel="stylesheet" href="CSS/header.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,6 +14,40 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
   <style>
+.carousel {
+	margin-bottom: 0;
+	padding: 0 40px 30px 40px; 
+}
+/*** The Controls ***/
+.carousel-control {
+	left: -12px;
+	height: 40px;
+	width: 40px;
+	background: none repeat scroll 0 0 #222; 
+	border: 4px solid #fff;
+	border-radius: 6px;
+}
+
+.carousel-control.right {
+	right: -12px;
+}
+
+/*** The Indicators ***/
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+
+/*** Carousel Indicator Colors ***/
+.carousel-indicators li {
+	background: #cece;
+}
+
+.carousel-indicators .active {
+	background: red; 
+}
 
   </style>
 </head>
@@ -46,19 +81,12 @@
 </nav>   
 </header>
 
-<!-- Hero Image -->
+
 <section class="container">
     <div class="row">
-            <div class="col-xs-12">
-                <div id="imageCarousel" class="carousel slide" data-interval="false" data-ride="carousel" data-pause="hover" data-wrap="true">
-
-                    <ol class="carousel-indicators">
-                        <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#imageCarousel" data-slide-to="1"></li>
-                        <li data-target="#imageCarousel" data-slide-to="2"></li>
-                        <li data-target="#imageCarousel" data-slide-to="3"></li>
-                    </ol>
-
+            <div class="col-md-12">
+                <div id="image_carousel" class="carousel slide">
+					<!-- Carousel Images -->
                     <div class="carousel-inner">
                         <div class="item active">
                           <div class="row">
@@ -86,9 +114,9 @@
                                 <h3>New Arrivals</h3>
                             </div>
                             </div>
-                        </div>
-                        </div>
-                        <div class="item active">
+                        </div><!-- row -->
+                        </div><!-- item -->
+                        <div class="item">
                           <div class="row">
                             <div class="col-xs-3">
                             <img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
@@ -114,17 +142,17 @@
                                 <h3>New Arrivals</h3>
                             </div>
                             </div>
-                        </div>
-                        </div>
+                        </div><!-- row -->
+                        </div><!-- item -->
                         
-                    </div>
-
-                    <a href="#imageCarousel" class="carousel-control left" data-slide="prev">
+                    </div><!--Carousel Inner-->
+						<a href="#imageCarousel" class="prev" data-slide="prev">
                         <i class="fas fa-arrow-left"></i>
                     </a>
-                    <a href="#imageCarousel" class="carousel-control right" data-slide="next">
+                    <a href="#imageCarousel" class="next" data-slide="next">
                         <i class="fas fa-arrow-right"></i>
                     </a>
+					
                 </div>
 
             </div>

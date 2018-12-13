@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/carousel.css">
   <link rel="stylesheet" href="CSS/clothing.css">
   <link rel="stylesheet" href="CSS/header.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,6 +15,7 @@
   
   <style>
 
+/*** The Controls ***/
   </style>
 </head>
 <body>
@@ -46,48 +48,82 @@
 </nav>   
 </header>
 
-<!-- Hero Image -->
+
 <section class="container">
     <div class="row">
-      <div class="col-md-12 heroSlider-fixed">
-        <div class="overlay">
-      </div>
-         <!-- Slider -->
-        <div class="slider responsive">
-                    <div class="carousel_2">
-						<img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
-					</div>
-					<div class="carousel_2">
-						<img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
-					</div>
-					<div class="carousel_2">
-						<img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
-					</div>
-					<div class="carousel_2">
-						<img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
-					</div>
-					<div class="carousel_2">
-						<img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
-					</div>
-					<div class="carousel_2">
-						<img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
-					</div>
-					<div class="carousel_2">
-						<img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
-					</div>
-					<div class="carousel_2">
-						<img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
-					</div>
-        </div>
-				 <!-- control arrows -->
-				<div class="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				</div>
-				<div class="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <div class="col-md-12">
+                <div id="image_carousel" class="carousel slide">
+					<!-- Carousel Images -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                          <div class="row">
+                            <div class="col-xs-3">
+                            <img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
+                            <div class="carouselcaption">
+                                <h3>New Arrivals</h3>
+                            </div>
+                            </div>
+                            <div class="col-xs-3">
+                            <img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
+                            <div class="carouselcaption">
+                                <h3>New Arrivals</h3>
+                            </div>
+                            </div>
+                            <div class="col-xs-3">
+                            <img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
+                            <div class="carouselcaption">
+                                <h3>New Arrivals</h3>
+                            </div>
+                            </div>
+                            <div class="col-xs-3">
+                            <img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
+                            <div class="carouselcaption">
+                                <h3>New Arrivals</h3>
+                            </div>
+                            </div>
+                        </div><!-- row -->
+                        </div><!-- item -->
+                        <div class="item">
+                          <div class="row">
+                            <div class="col-xs-3">
+                            <img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
+                            <div class="carouselcaption">
+                                <h3>New Arrivals</h3>
+                            </div>
+                            </div>
+                            <div class="col-xs-3">
+                            <img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
+                            <div class="carouselcaption">
+                                <h3>New Arrivals</h3>
+                            </div>
+                            </div>
+                            <div class="col-xs-3">
+                            <img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
+                            <div class="carouselcaption">
+                                <h3>New Arrivals</h3>
+                            </div>
+                            </div>
+                            <div class="col-xs-3">
+                            <img src="http://placehold.it/210x160" class="img-responsive" alt="Image">
+                            <div class="carouselcaption">
+                                <h3>New Arrivals</h3>
+                            </div>
+                            </div>
+                        </div><!-- row -->
+                        </div><!-- item -->
+                        
+                    </div><!--Carousel Inner-->
+						<a href="#imageCarousel" class="prev" data-slide="prev">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <a href="#imageCarousel" class="next" data-slide="next">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+					
                 </div>
-      </div>
-    </div>
+
+            </div>
+        </div>
 </section>
 
 <!-- Trending Images -->
@@ -287,6 +323,6 @@
 <footer class="container-fluid text-center">
   <p>Footer Text</p>
 </footer>
-<script type="text/javascript" src="carousel.js"></script>
+
 </body>
 </html>
