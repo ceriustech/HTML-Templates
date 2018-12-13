@@ -52,10 +52,6 @@
     margin-top: 40px;
 }
 
-.trend_row_section {
-
-}
-
 .trend_row_1 {
     text-align: center; 
 }
@@ -65,16 +61,34 @@
     width: 75%;
 }
 
-.trend_row_1 img:nth-child(odd)
+.trend_text_row_1 {
+    color: #000;
+    font-family: Gilroy;
+    font-size: 1.6em;
+    font-weight: 800
+}
 
 
 .trend_row_2 {
     position: relative;
 }
 
-.trend_text h1 {
+.trend_text_row_2 h1 {
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 2em;
+    font-weight: 800;
     position: absolute;
     bottom: 15%;
-    left: 3%; 
+    text-align: center;
+    width: 100%;
 }
 
+.trend_text_row_2 p {
+    color: #fff;
+    font-size: 1em;
+    position: absolute;
+    bottom: 7%;
+    text-align: center;
+    width: 100%;
+}
