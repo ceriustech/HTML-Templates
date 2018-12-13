@@ -85,4 +85,54 @@ h2 {
 
 .display_grid_section {
     margin-top: 50px;
+    position: relative; 
 }
+
+.grid_display img {
+    width: 100%;
+}
+
+.grid_display_text_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.grid_display_text_header h4, p {
+    font-size: 1.2em;
+}
+
+grid_display_text_header p {
+    color: #000;
+}
+
+.grid_display_text_header h4{
+    color: #000;
+    font-weight: bold;
+}
+
+.fa-circle {
+    color: #6464;
+    font-size: 5px;
+    margin: 17px 10px;
+}
+
+.grid_display_text_header p {
+    color: #6464;
+    margin: 5px 10px;
+}
+
+.fa-info-circle {
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+.fa-heart {
+    color: #fff;
+    position: absolute; 
+    top: 5%;
+    right: 10%;
+}
+
+
+
