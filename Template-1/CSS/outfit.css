@@ -56,7 +56,12 @@
     text-align: center; 
 }
 
-.outfit_carousel_caption h3{
+#image_carousel img {
+    height: 240px;
+    width: 190px;
+}
+
+.outfit_carousel_caption h3 {
     color: #000;
     font-family: Gilroy;
     font-size: 1.6em;
