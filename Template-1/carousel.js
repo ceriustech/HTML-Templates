@@ -1,4 +1,5 @@
-$('.responsive').slick({
+$(function () {
+$('.carousel').slick({
   dots: true,
 	prevArrow: $('.prev'),
 	nextArrow: $('.next'),
@@ -35,3 +36,6 @@ $('.responsive').slick({
     // instead of a settings object
   ]
 });
+})
+
+
