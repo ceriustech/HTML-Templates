@@ -1,5 +1,11 @@
 
 /*** Clothing Carousel Styles ***/
+
+.clothing_carousel img {
+    background-color: #fff; 
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(#000)); 
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000 100%);
+}
 .clothing_carousel_caption h3 {
     color: #fff; 
     font-family: Gilroy;
