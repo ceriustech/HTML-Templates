@@ -1,5 +1,5 @@
 $(function () {
-$('.carousel').slick({
+$('.slick_carousel').slick({
   dots: true,
 	prevArrow: $('.prev'),
 	nextArrow: $('.next'),
