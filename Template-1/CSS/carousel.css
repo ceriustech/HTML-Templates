@@ -44,12 +44,29 @@
 
 /*** Carousel Media Queries For Responsiveness ***/
 @media screen and (max-width: 992px) {
+    /*** Outfit Carousel ***/
   .next {
     display: none !important;
   }
     .prev {
         display: none !important;
     }
+    /*** Clothing Carousel ***/
+     .clothing_arrow_prev {
+    display: none !important;
+  }
+    .clothing_arrow_prev {
+        display: none !important;
+    }
+    
+    /*** Brands Carousel ***/
+    .brands_arrow_prev {
+    display: none !important;
+  }
+    .brands_arrow_prev {
+        display: none !important;
+    }
+    
 }
 
 
