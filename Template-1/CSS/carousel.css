@@ -42,11 +42,15 @@
   color: black;
 }
 
-@media screen and (max-width: 800px) {
+/*** Carousel Media Queries For Responsiveness ***/
+@media screen and (max-width: 992px) {
   .next {
     display: none !important;
   }
+    .prev {
+        display: none !important;
+    }
 }
 
-/*** Outfit Carousel ***/
+
 
