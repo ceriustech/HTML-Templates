@@ -56,9 +56,10 @@
     text-align: center; 
 }
 
-#image_carousel img {
+.image_carousel img {
     height: 240px;
     width: 190px;
+    margin: auto; 
 }
 
 .outfit_carousel_caption h3 {
@@ -73,6 +74,10 @@
 .trend_row_2 {
     margin: 40px 0;
     position: relative;
+}
+
+.trend_row_2 img {
+    margin: auto;
 }
 
 .trend_text_row_2 h1 {

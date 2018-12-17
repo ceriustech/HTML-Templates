@@ -1,20 +1,35 @@
 
 /*** Clothing Carousel Styles ***/
 
-.clothing_carousel img {
+.clothing_image_carousel img {
     background-color: #fff; 
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(#000)); 
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000 100%);
+    border-radius: 6px; 
+    height: 220px;
+    width: 160px;
+    margin: auto; 
 }
 .clothing_carousel_caption h3 {
     color: #fff; 
     font-family: Gilroy;
     font-size: 1.0em;
     font-weight: 800;
-    margin-left: 5px;
+    margin-left: 6em;
     position: absolute;
     bottom: 3%;
 }
+
+.clothing_arrow_prev {
+    position: absolute;
+    top: 18%;
+}
+
+.clothing_arrow_next {
+    position: absolute;
+    top: 18%;
+}
+
 /*** Clothing Grid Section***/
 
 .display_grid_section {

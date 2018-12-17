@@ -1,6 +1,5 @@
 $(function () {
 $('.slick_carousel').slick({
-  dots: true,
 	prevArrow: $('.prev'),
 	nextArrow: $('.next'),
   infinite: false,
@@ -14,7 +13,7 @@ $('.slick_carousel').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {

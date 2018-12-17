@@ -4,12 +4,7 @@
 }
 
 .carousel_padding {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    
 }
 
 .carousel_margin {
@@ -25,8 +20,8 @@
   color: #999;
   font-size: 1.5em;
   position: absolute;
-  top: 38%;
-  left: 4em;
+  top: 68%;
+  left: 19%;
 }
 
 .prev :hover {
@@ -38,8 +33,8 @@
   color: #999;
   font-size: 1.5em;
   position: absolute;
-  top: 38%;
-  right: 4em;
+  top: 68%;
+  right: 19%;
 }
 
 .next :hover {

@@ -1,2 +1,17 @@
 /*** Carousel Styles ***/
 
+.brands_arrow_prev {
+    position: absolute;
+    top: 18%;
+}
+
+.brands_arrow_next {
+    position: absolute;
+    top: 18%;
+}
+
+.brands_image_carousel img {
+    height: 140px;
+    width: 140px;
+    margin: auto;
+}
