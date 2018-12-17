@@ -83,5 +83,34 @@ grid_display_text_header p {
     right: 10%;
 }
 
+/*** Media Queries For Responsiveness ***/
+@media screen and (max-width: 768px) {
+  /*** Hero Image ***/
+    .clothing_carousel_caption h3 {
+        margin-left: 5em;
+    }
+}
+
+@media screen and (max-width: 426px) {
+  /*** Hero Image ***/
+    .clothing_carousel_caption h3 {
+        margin-left: 10em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+  /*** Hero Image ***/
+    .clothing_carousel_caption h3 {
+        margin-left: 8em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+  /*** Hero Image ***/
+    .clothing_carousel_caption h3 {
+        margin-left: 6em;
+    }
+}
+
 
 
