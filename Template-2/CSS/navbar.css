@@ -1,0 +1,8 @@
+.nav_bar {
+    float: right; 
+}
+
+/*** Bootstrap CSS Navigation Modified Styles ***/
+.navbar-nav {
+    display: none !important; 
+}

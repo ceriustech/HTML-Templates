@@ -1,0 +1,105 @@
+.content_area {
+    margin-top: 5%;
+}
+
+/*** Image Styles ***/
+.display_image img {
+    box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.51);
+}
+
+.display_image_info {
+    color: #898989;
+    margin-top: 10px
+}
+
+/*** Buttons ***/
+.display_image_info button{
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #000;
+    height: 40px;
+    width: 206px;
+}
+/*** Display Info Styles ***/
+.display_item_info {
+    margin-left: 20px; 
+}
+
+.display_item_info h1{
+    color: #000;
+    font-family: Gilroy;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.text_bold {
+    font-weight: 700;
+}
+
+/*** Button Styles ***/
+
+.btn_container p{
+    font-size: .9em !important;
+}
+
+/*** Clothing Grid Section***/
+.display_grid {
+    position: relative;
+}
+.display_grid_section {
+    margin-top: 50px;
+    position: relative; 
+}
+
+.grid_display {
+    
+}
+
+.grid_display img {
+    width: 100%;
+}
+
+.grid_display_text_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.grid_display_text_header h4, p {
+    font-size: 1.2em;
+}
+
+grid_display_text_header p {
+    color: #000;
+}
+
+.grid_display_text_header h4{
+    color: #000;
+    font-weight: bold;
+}
+
+.fa-circle {
+    color: #6464;
+    font-size: 5px;
+    margin: 17px 10px;
+}
+
+.grid_display_text_header p {
+    color: #6464;
+    margin: 5px 10px;
+}
+
+.fa-info-circle {
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+.fa-heart {
+    color: #fff;
+    position: absolute; 
+    top: 5%;
+    right: 10%;
+}
