@@ -79,12 +79,14 @@
 }
 
 /*** Clothing Grid Section***/
-.display_grid {
-    padding-left: 0px !important; 
-}
+
 .display_grid_section {
     margin-top: 50px;
     position: relative; 
+}
+
+.grid_display {
+    padding-left: 0px !important; 
 }
 
 .grid_display_img {
