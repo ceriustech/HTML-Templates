@@ -57,60 +57,16 @@ h1, h2, h3, h4, h5, p {
     display: -ms-flexbox;
     display: flex; 
 }
-.btn_border {
+.btn_border_gry {
     border: 2px solid #ccc;
     border-radius: 4px;
     color: #b2b0b0;
+    padding: 0px !important; 
 }
 
-.thumbs_up {
-    
-}
-.thumbs_up p {
-    padding: 0 10px;
-}
 
-.thumbs_down {
-    margin-left: 10px;
-}
-.fa-thumbs-down {
-    margin-bottom: 15px;
-    
-}
-.thumbs_down p {
-    padding: 0 10px;
-}
 
-/*** Forms ***/
-.display_form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-top: 20px;
-}
 
-.display_form textarea {
-    background-color: #f2f2f2;
-    border: none;
-    height: 120px;
-    margin-bottom: 30px;
-}
-
-.display_form button {
-    color: #fff;
-    background-color: #ee2356;
-    border-radius: 6px;
-    font-family: Gilroy;
-    font-size: 1.4em;
-    font-weight: 800;
-    height: 44px;
-    width: 208px;
-    
-}
 
 
 

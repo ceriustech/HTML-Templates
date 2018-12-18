@@ -1,9 +1,48 @@
+.btn_container_p{
+    font-size: .9em;
+    margin-top: 5px; 
+    padding: 5px 10px;
+    
+}
+
 .content_area {
     margin-top: 5%;
 }
 
+/*** Forms ***/
+.display_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.display_form_textarea {
+    background-color: #f2f2f2;
+    border: none;
+    height: 120px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.display_form_button {
+    color: #fff;
+    background-color: #ee2356;
+    border-radius: 6px;
+    font-family: Gilroy;
+    font-size: 1.4em;
+    font-weight: 800;
+    height: 44px;
+    width: 208px;
+    
+}
+
 /*** Image Styles ***/
-.display_image img {
+.display_image_img {
     box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.51);
     -webkit-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.51);
     -moz-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.51);
@@ -11,11 +50,11 @@
 
 .display_image_info {
     color: #898989;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 /*** Buttons ***/
-.display_image_info button{
+.display_image_info_button {
     background: #fff;
     border: 1px solid #000;
     border-radius: 4px;
@@ -28,7 +67,7 @@
     margin-left: 20px; 
 }
 
-.display_item_info h1{
+.display_item_info_h1{
     color: #000;
     font-family: Gilroy;
     font-size: 2em;
@@ -39,26 +78,16 @@
     font-weight: 700;
 }
 
-/*** Button Styles ***/
-
-.btn_container p{
-    font-size: .9em !important;
-}
-
 /*** Clothing Grid Section***/
 .display_grid {
-    position: relative;
+    padding-left: 0px !important; 
 }
 .display_grid_section {
     margin-top: 50px;
     position: relative; 
 }
 
-.grid_display {
-    
-}
-
-.grid_display img {
+.grid_display_img {
     width: 100%;
 }
 
@@ -68,38 +97,56 @@
     display: flex;
 }
 
-.grid_display_text_header h4, p {
+.grid_display_text_header_h, .grid_display_text_header_p {
     font-size: 1.2em;
 }
 
-grid_display_text_header p {
-    color: #000;
-}
-
-.grid_display_text_header h4{
+.grid_display_text_header_h {
     color: #000;
     font-weight: bold;
 }
 
-.fa-circle {
+.grid_display_text_header_p {
+    color: #b2b2b2;
+    margin: 5px 10px;
+}
+
+.grid_display_circle {
     color: #6464;
     font-size: 5px;
     margin: 17px 10px;
 }
 
-.grid_display_text_header p {
-    color: #6464;
-    margin: 5px 10px;
-}
-
-.fa-info-circle {
+.grid_display_info_circle {
     margin-top: 10px;
     margin-left: 20%;
 }
 
-.fa-heart {
+.grid_display_heart {
     color: #fff;
     position: absolute; 
     top: 5%;
     right: 10%;
 }
+
+.thumbs_down {
+    margin-left: 10px;
+}
+
+.thumbs_down_icon {
+    padding: 6px 10px;
+    margin-top: 5px;  
+}
+
+.thumbs_up_icon {
+    padding: 6px 10px;
+    margin-top: 5px; 
+}
+
+.thumbs_down:hover, .thumbs_up:hover {
+    color: #000;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+
