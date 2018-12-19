@@ -20,7 +20,7 @@
     justify-content: center; 
 }
 
-.hero_text h1{
+.hero_text_h {
     color: #000;
     font-family: Gilroy;
     font-size: 2.5em;
@@ -33,7 +33,7 @@
     transform: translate(-50%, -25%);
     
 }
-.hero_text p {
+.hero_text_p {
     color: #000;
     font-family: Gilroy;
     font-size: 1em;
@@ -56,13 +56,13 @@
     text-align: center; 
 }
 
-.image_carousel img {
-    height: 240px;
+.image_carousel_img {
+    height: 240px !important;
     width: 190px;
     margin: auto; 
 }
 
-.outfit_carousel_caption h3 {
+.outfit_carousel_caption_h {
     color: #000;
     font-family: Gilroy;
     font-size: 1.6em;
@@ -78,11 +78,11 @@
     position: relative;
 }
 
-.trend_row_2 img {
+.trend_row_2_img {
     margin: auto;
 }
 
-.trend_text_row_2 h1 {
+.trend_text_row_2_h {
     color: #fff;
     font-family: Gilroy;
     font-size: 2em;
@@ -93,7 +93,7 @@
     width: 100%;
 }
 
-.trend_text_row_2 p {
+.trend_text_row_2_p {
     color: #fff;
     font-size: 1em;
     position: absolute;
