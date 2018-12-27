@@ -40,6 +40,15 @@ h1, h2, h3, h4, h5, p {
           justify-content: center;
       }
 
+.flex_container_2 {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+      }
+
 
 .no_padding {
     padding: 0 !important; 

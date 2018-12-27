@@ -1,0 +1,127 @@
+.btn_container_p{
+    font-size: .9em;
+    margin-top: 5px; 
+    padding: 5px 10px;
+    
+}
+
+.content_area {
+    margin-top: 5%;
+}
+.display_item_info_header {
+    border-top: 2px solid red;    
+}
+
+
+.display_item_info_alert_error {
+  padding: 20px;
+  background-color: #F9EBE7;
+  color: #000;
+}
+
+.display_item_info_alert_error_text {
+    position: relative;
+}
+
+.display_item_info_alert_error_text_message {
+    position: relative;
+    bottom: 7px;
+    left: 10px;
+}
+
+.display_item_info_alert_error_text_h {
+    font-weight: 600;
+}
+
+.display_item_info_alert_error_icon_circle {
+    color: red;
+    font-size: 1.5em; 
+}
+.display_item_info_alert_error_icon_dot {
+    font-size: .2em;
+    position: relative;
+    bottom: 4px; 
+}
+.closebtn {
+  margin-left: 15px;
+  color: #000;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+/*** Forms ***/
+.display_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.display_form_textarea {
+    background-color: #f2f2f2;
+    border: none;
+    height: 120px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.display_form_button {
+    color: #fff;
+    background-color: #ee2356;
+    border-radius: 6px;
+    font-family: Gilroy;
+    font-size: 1.4em;
+    font-weight: 800;
+    height: 44px;
+    width: 208px;
+    
+}
+
+/*** Image Styles ***/
+.display_image_img {
+    box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.51);
+}
+
+.display_image_info {
+    color: #898989;
+    margin-top: 10px;
+}
+
+/*** Buttons ***/
+.display_image_info_button {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #000;
+    height: 40px;
+    width: 206px;
+}
+/*** Display Info Styles ***/
+.display_item_info {
+    margin-left: 20px; 
+}
+
+.display_item_info_h1{
+    color: #000;
+    font-family: Gilroy;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.text_bold {
+    font-weight: 700;
+}
+
+
+

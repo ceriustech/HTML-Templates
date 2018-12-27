@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="CSS/reset.css">
-  <link rel="stylesheet" href="CSS/template_page_1.css">
+  <link rel="stylesheet" href="CSS/template_page_2.css">
   <link rel="stylesheet" href="CSS/navbar.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -51,21 +51,42 @@
     <!-- Page Content -->
     <section class="container content_area">
 
-        <!-- Heading Row -->
-        <div class="">
+           <!-- Heading Row -->
+        <div class="row">
            <!-- /.col-md-4 -->
-            
+            <div class="col-md-4 display_image">
+                <img src="http://placehold.jp/360x504.png" class="img-responsive display_image_img" alt="Image">
+                <div class="display_image_info">
+                    <p class="message">Shared on 10/21/2019</p>
+                    <button class="display_image_info_button" type="button">Try look on in fitting room</button>
+                </div>
+            </div>
+            <!-- /.col-md-8 -->
+            <div class="col-md-8">
+               <div class="display_item_info">
+                  <div class="display_item_info_header">
+                    <div class="display_item_info_alert_error">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        <div class="display_item_info_alert_error_text flex_container_2">
+                           <div>
+                               <i class="fas fa-ban display_item_info_alert_error_icon_circle"></i>
+                           </div>
+                           <div class="display_item_info_alert_error_text_message">
+                              <h4 class="display_item_info_alert_error_text_h">Looks like something went wrong</h4>
+                            <p class="display_item_info_alert_error_text_p"><i class="fas fa-circle display_item_info_alert_error_icon_dot"></i> Email address is not valid</p>
+                           </div>
+                        </div>
+                    </div>
+                  </div>
+                   
+                    <form class="display_form">
+                      <textarea class="display_form_textarea" name="message">I love that dress! It could go with anything!</textarea>
+                      <button class="display_form_button" type="button">Submit Feedback</button>
+                    </form>
+               </div>
+            </div>
         </div>
-     
-
-       
-
-       
-     
-
-        
-      
-
+        <!-- /.row -->
     </section>
     <!-- /.container -->
 
