@@ -93,6 +93,10 @@
     width: 100%;
 }
 
+.grid_display_item:hover {
+    cursor: pointer;
+}
+
 .grid_display_text_header {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -1,7 +1,7 @@
 
 /*** Clothing Carousel Styles ***/
 
-.clothing_image_carousel img {
+.clothing_image_carousel_img {
     background-color: #fff; 
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(#000)); 
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000 100%);
@@ -10,7 +10,7 @@
     width: 160px;
     margin: auto; 
 }
-.clothing_carousel_caption h3 {
+.clothing_carousel_caption_h {
     color: #fff; 
     font-family: Gilroy;
     font-size: 1.0em;
@@ -37,7 +37,7 @@
     position: relative; 
 }
 
-.grid_display img {
+.grid_display_img {
     width: 100%;
 }
 
@@ -47,36 +47,36 @@
     display: flex;
 }
 
-.grid_display_text_header h4, p {
-    font-size: 1.2em;
-}
-
-grid_display_text_header p {
-    color: #000;
-}
-
-.grid_display_text_header h4{
+.grid_display_text_header_h{
     color: #000;
     font-weight: bold;
+    font-size: 1.2em
 }
 
-.fa-circle {
+.grid_display_text_header_p {
+    color: #b2b2b2;
+    margin: 5px 10px;
+}
+
+.grid_display_text_header_p2 {
+    color: #000;
+    font-size: 1em;
+}
+
+.grid_display_circle {
     color: #6464;
     font-size: 5px;
     margin: 17px 10px;
 }
 
-.grid_display_text_header p {
-    color: #6464;
-    margin: 5px 10px;
-}
 
-.fa-info-circle {
+
+.grid_display_info_circle {
     margin-top: 10px;
     margin-left: 20%;
 }
 
-.fa-heart {
+.grid_heart {
     color: #fff;
     position: absolute; 
     top: 5%;
