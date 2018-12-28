@@ -23,6 +23,10 @@
     position: relative;
 }
 
+.display_item_info_alert_error_image {
+     width: 25px;
+}
+
 .display_item_info_alert_error_text_message {
     position: relative;
     bottom: 7px;
@@ -33,22 +37,18 @@
     font-weight: 600;
 }
 
-.display_item_info_alert_error_icon_circle {
-    color: red;
-    font-size: 1.5em; 
-}
 .display_item_info_alert_error_icon_dot {
     font-size: .2em;
     position: relative;
     bottom: 4px; 
 }
 .closebtn {
-  margin-left: 15px;
   color: #000;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
   cursor: pointer;
+  float: right;
+  font-size: 2.2em;
+  line-height: 20px;
+  margin-left: 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
