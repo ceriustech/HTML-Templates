@@ -1,0 +1,36 @@
+.navbar_call_to_action {
+    background: #43A9CB;
+    border-radius: 6px;
+}
+.navbar_call_to_action_a{
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.navbar_header_menu {
+    height: 80px;
+    position: relative;
+}
+
+.navbar_header_menu_links {
+    padding: 20px;
+}
+
+.navbar_header_menu_a {
+    color: #000;
+    font-size: 1em;
+    font-weight: 600;
+}
+.navbar_logo {
+    position: relative;
+}
+
+.navbar_logo_img {
+    position: absolute;
+    left: 0;
+}
+
+.navbar_mobile_menu {
+    z-index: 100;
+}
