@@ -14,25 +14,6 @@
     position: relative;
 }
 
-.hero_image_call_to_action {
-    background: #43A9CB;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 600;
-    padding: 15px;
-    text-align: center;
-    width: 15%;
-}
-
-.hero_image_call_to_action_a {
-    color: #fff;
-    padding: 15px;
-    text-decoration: none !important;
-}
-.hero_image_call_to_action_a:hover {
-    color: #fff;
-}
-
 .hero_image_dot {
     font-size: 5px;
     padding: 10px;
@@ -50,17 +31,6 @@
 
 
 /** Navigation Menu **/
-.navbar_call_to_action {
-    background: #43A9CB;
-    border-radius: 6px;
-    margin-left: 35px;
-}
-.navbar_call_to_action_a{
-    color: #fff;
-    font-size: 1em;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
 .navbar_header_menu {
     background-color:#fff;
     height: 85px;
