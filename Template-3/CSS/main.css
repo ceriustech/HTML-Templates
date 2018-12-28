@@ -1,6 +1,59 @@
+/** Features and Benefits Text **/
+.f_b_header_text {
+    color: #646464;
+}
+
+.f_b_header_text_h {
+    font-size: 3em;
+    line-height: 1.3;
+}
+
+/** Hero Image Styles **/ 
+.hero_image {
+    margin-top: 85px;
+    position: relative;
+}
+
+.hero_image_call_to_action {
+    background: #43A9CB;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 15px;
+    text-align: center;
+    width: 15%;
+}
+
+.hero_image_call_to_action_a {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none !important;
+}
+.hero_image_call_to_action_a:hover {
+    color: #fff;
+}
+
+.hero_image_dot {
+    font-size: 5px;
+    padding: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+.hero_image_h {
+    font-size: 4.3em; ;
+    font-weight: 700;
+}
+.hero_image_text {
+    color: #fff;
+}
+
+
+/** Navigation Menu **/
 .navbar_call_to_action {
     background: #43A9CB;
     border-radius: 6px;
+    margin-left: 35px;
 }
 .navbar_call_to_action_a{
     color: #fff;
@@ -9,12 +62,18 @@
     letter-spacing: 1px;
 }
 .navbar_header_menu {
-    height: 80px;
+    background-color:#fff;
+    height: 85px;
     position: relative;
 }
 
 .navbar_header_menu_links {
     padding: 20px;
+}
+
+.navbar_header_menu_links_ul {
+    position: absolute;
+    right: 0;
 }
 
 .navbar_header_menu_a {
@@ -34,3 +93,4 @@
 .navbar_mobile_menu {
     z-index: 100;
 }
+
