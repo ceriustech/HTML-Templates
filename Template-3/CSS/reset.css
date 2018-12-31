@@ -37,7 +37,11 @@ h1, h2, h3, h4, h5, p, a {
           margin-bottom: 5px;
           position: relative;
       }
-
+.flex_container_2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
 
 .no_padding {
     padding: 0 !important; 

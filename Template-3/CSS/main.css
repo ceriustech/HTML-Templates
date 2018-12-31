@@ -51,6 +51,35 @@
     line-height: 1.8;
 }
 
+.grid_demo_info_images {
+    margin-top: 40px;
+    position: relative;
+}
+
+.grid_demo_info_row {
+    position: absolute;
+    left: 0;
+}
+
+.grid_display_text_header_h {
+    color: #59595b;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.grid_display_logo_container {
+    
+}
+
+.grid_display_logo_img {
+    width: 75px;
+    height: 20px !important;
+}
+
+.grid_display_logo_p {
+    font-size: .9em;
+    font-weight: 800;
+}
 /**** Jumbotron Hero Image Styles ****/ 
 .hero_image {
     margin-top: 85px;
