@@ -163,11 +163,42 @@
 .hero_image_text {
     color: #fff;
 }
+/**** Industry Info Section ****/
+.industry_info_section {
+    background: #969696;
+    margin-top: 80px;
+}
+
+.industry_info_display_1 {
+    background: #E42C59;
+}
+
+.industry_info_display_2 {
+    background: #E42C59;
+}
+
+
 /**** Info Display Section ****/
 .info_display_section {
     margin-top: 80px;
 }
 
+.info_display_img_container {
+    padding-left: 0 !important;
+}
+
+.info_display_text {
+    padding-top: 25px;
+}
+.info_display_text_h {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.info_display_text_p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
 /**** Navigation Menu ****/
 .navbar_header_action_li {
     background: #43a9cb;
