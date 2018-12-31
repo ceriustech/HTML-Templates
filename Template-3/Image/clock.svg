@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>29F1E689-CD80-4C47-B5F8-1E46818F361B</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M20,-4.26e-14 C8.954375,-4.26e-14 0,8.954375 0,20 C0,31.045625 8.954375,40 20,40 C31.045625,40 40,31.045625 40,20 C40,8.954375 31.045625,-4.26e-14 20,-4.26e-14 M20,37.5 C10.350625,37.5 2.5,29.649375 2.5,20 C2.5,10.350625 10.350625,2.5 20,2.5 C29.649375,2.5 37.5,10.350625 37.5,20 C37.5,29.649375 29.649375,37.5 20,37.5 Z M28.3969375,26.629 L21.2500625,19.482125 L21.2500625,6.25025 C21.2500625,5.559625 20.6900625,5.00025 20.0000625,5.00025 C19.3094375,5.00025 18.7500625,5.559625 18.7500625,6.25025 L18.7500625,16.982125 L18.7500625,20.51775 L21.2500625,23.01775 L26.6288125,28.397125 C27.1175625,28.884625 27.9088125,28.884625 28.3969375,28.397125 C28.8850625,27.908375 28.8850625,27.117125 28.3969375,26.629 Z" id="path-1"></path>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-323.000000, -3442.000000)">
+            <g id="Group-8" transform="translate(0.000000, 3274.000000)">
+                <g id="Why">
+                    <g id="Group-4" transform="translate(323.000000, 168.000000)">
+                        <g id="access">
+                            <g id="icon-/-clock">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Combined-Shape" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <g id="color/black" mask="url(#mask-2)" fill="#000000" fill-rule="evenodd">
+                                    <g transform="translate(-11.250000, -11.250000)" id="Black">
+                                        <rect x="0" y="0" width="63" height="63"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

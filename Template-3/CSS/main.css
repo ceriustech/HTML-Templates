@@ -6,7 +6,7 @@
 .google_app_info_btn {
     position: relative;
     bottom: 35px;
-    width: 130px;
+    width: 132px;
 }
 
 .apple_app_info_btn {
@@ -121,6 +121,12 @@
 }
 /**** Jumbotron Hero Image Styles ****/ 
 .hero_image {
+    background-image: url("");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 85px;
     position: relative;
 }
@@ -167,14 +173,20 @@
 .industry_info_section {
     background: #969696;
     margin-top: 80px;
+    padding: 0 12% !important;
 }
 
+.industry_info_container {
+    text-align: center;
+}
 .industry_info_display_1 {
     background: #E42C59;
+    padding: 55px;
 }
 
 .industry_info_display_2 {
     background: #E42C59;
+    padding: 55px;
 }
 
 
