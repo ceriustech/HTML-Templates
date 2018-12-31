@@ -1,4 +1,5 @@
-/** Features and Benefits Text **/
+/**** Features and Benefits Section ****/
+/* Features and Benefits Text */
 .f_b_header_text {
     color: #646464;
 }
@@ -7,8 +8,50 @@
     font-size: 3em;
     line-height: 1.3;
 }
+/* Grid Demo*/
+.grid_demo_section {
+    margin-top: 80px;
+}
 
-/** Hero Image Styles **/ 
+.grid_demo_info_btn {
+    border: 2px solid #43A9CB;
+    border-radius: 6px;
+    position: relative;
+    text-align: center;
+    width: 40%;
+    height: 50px;
+}
+
+.grid_demo_info_btn_container {
+    margin-top: 30px;
+}
+
+.grid_demo_info_btn_a {
+    color: #43A9CB;
+    display: block;
+    font-size: .8em;
+    font-weight: 600;
+    padding: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none !important;
+    width: 100%;
+    height: 100%;
+}
+.grid_demo_info_btn_a:hover {
+    color: #43A9CB;
+}
+
+.grid_demo_info_h {
+    font-weight: 800;
+}
+
+.grid_demo_info_p {
+    line-height: 1.8;
+}
+
+/**** Jumbotron Hero Image Styles ****/ 
 .hero_image {
     margin-top: 85px;
     position: relative;
@@ -54,7 +97,7 @@
 }
 
 
-/** Navigation Menu **/
+/**** Navigation Menu ****/
 .navbar_header_action_li {
     background: #43a9cb;
     border-radius: 6px;
@@ -96,6 +139,9 @@
     color: #000;
     font-size: 1em;
     font-weight: 600;
+}
+.navbar_header_menu_a:hover {
+    background: #fff !important;
 }
 .navbar_logo {
     position: relative;
