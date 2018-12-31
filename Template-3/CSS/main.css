@@ -1,3 +1,42 @@
+/**** App Info Section ****/
+.app_info_section {
+    margin-top: 80px;
+}
+
+.google_app_info_btn {
+    position: relative;
+    bottom: 35px;
+    width: 130px;
+}
+
+.apple_app_info_btn {
+    position: relative;
+    bottom: 35px;
+    width: 140px;
+}
+
+.app_info_btn_container {
+    position: relative;
+}
+
+.app_info_text {
+    margin-top: 20px;
+    padding-right: 45px !important;
+}
+
+.app_info_text_h {
+    font-weight: 800;
+}
+
+.app_info_text_p {
+    width: 80%;
+    line-height: 1.6;
+}
+
+.app_info_text_h2 {
+    font-size: 1.2em;
+}
+
 /**** Features and Benefits Section ****/
 /* Features and Benefits Text */
 .f_b_header_text {
@@ -53,12 +92,12 @@
 
 .grid_demo_info_images {
     margin-top: 40px;
+    padding-left: 0 !important;
     position: relative;
 }
 
 .grid_demo_info_row {
-    position: absolute;
-    left: 0;
+    
 }
 
 .grid_display_text_header_h {
@@ -124,7 +163,10 @@
 .hero_image_text {
     color: #fff;
 }
-
+/**** Info Display Section ****/
+.info_display_section {
+    margin-top: 80px;
+}
 
 /**** Navigation Menu ****/
 .navbar_header_action_li {
