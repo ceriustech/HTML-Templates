@@ -52,6 +52,13 @@
     margin-top: 80px;
 }
 
+.grid_demo_display_image {
+    height: 600px;
+}
+.grid_demo_display_image_img {
+    width: 90%;
+}
+
 .grid_demo_info_btn {
     border: 2px solid #43A9CB;
     border-radius: 6px;
@@ -121,12 +128,12 @@
 }
 /**** Jumbotron Hero Image Styles ****/ 
 .hero_image {
-    background-image: url("");
+    background-image: url("../Images/hero%20image.jpg");
     background-color: #cccccc;
-    height: 500px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     margin-top: 85px;
     position: relative;
 }
@@ -172,23 +179,39 @@
 /**** Industry Info Section ****/
 .industry_info_section {
     background: #969696;
+    height: 424px;
     margin-top: 80px;
     padding: 0 12% !important;
 }
 
 .industry_info_container {
     text-align: center;
+    height: 100%;
 }
 .industry_info_display_1 {
     background: #E42C59;
+    height: 100%;
     padding: 55px;
 }
 
 .industry_info_display_2 {
     background: #E42C59;
+    height: 100%;
     padding: 55px;
 }
 
+.industry_info_display_h {
+    color: #fff;
+    font-size: 2.3em;
+    font-weight: 800;
+}
+
+.industry_info_display_img_2 {
+    margin: 18px 0;
+}
+.industry_info_display_p {
+    color: #fff
+}
 
 /**** Info Display Section ****/
 .info_display_section {
@@ -269,4 +292,7 @@
 .navbar_mobile_menu {
     z-index: 100;
 }
-
+/**** Why SureFit Section ****/
+.w_sfit_container {
+    margin-top: 80px;
+}
