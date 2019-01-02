@@ -211,7 +211,7 @@ textarea.input100 {
 }
 
 .contact_wrap_btn {
-    width: calc((100% - 20px) / 4);
+    width: calc((100% - 100px) / 4);
 }
 .wrap-contact100-form-btn:hover .contact100-form-bgbtn {
   left: 0;
