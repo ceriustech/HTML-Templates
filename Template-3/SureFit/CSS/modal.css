@@ -1,5 +1,26 @@
 /**** Modal Contact Form ****/
-/*---------------------------------------------*/
+/*************** Modal Overlay Styles *****************/
+.fullscreen_dropdown_box {
+ height: 0;
+ position: absolute;
+ top: 65px;
+ width: 100%;
+ background: white;
+ z-index: 15;
+ overflow: hidden;
+ -webkit-transition: .7s height;
+ transition: .7s height;
+}
+
+.fullscreen_dropdown_box.fullscreen_activated {
+overflow: visible;
+height: 97%;
+-webkit-transition: .7s height;
+transition: .7s height;
+
+}
+
+/*========================================================================*/
 input {
 	outline: none;
 	border: none;
