@@ -24,6 +24,10 @@ h1, h2, h3, h4, h5, p, a {
     
 }
 
+.apple_btn {
+    width: 132px;
+}
+
 .extra_padding_r {
     padding-right: 10px !important;
 }
@@ -55,9 +59,18 @@ h1, h2, h3, h4, h5, p, a {
     width: 132px;
 }
 
-.apple_btn {
-    width: 132px;
+.list_circle {
+    border: 2px solid #E42C59;
+    color: #E42C59;
+  	background-color: #fff;
+  	border-radius: 50%;
+  	display: inline-block;
+    padding-top: 5px;
+  	text-align: center;
+    height: 55px;
+  	width: 55px;
 }
+
 .no_padding {
     padding: 0 !important; 
 }

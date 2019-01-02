@@ -176,6 +176,35 @@
 .hero_image_text {
     color: #fff;
 }
+/**** How it works Section ****/
+.how_it_works_section {
+    margin-top: 80px;
+}
+
+.how_it_works_display_info_list_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.how_it_works_display_info_h {
+    color: #717171;
+}
+
+.how_it_works_display_info_h_2 {
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.how_it_works_display_info_list_p {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.how_it_works_display_info_btn_container {
+
+}
 /**** Industry Info Section ****/
 .industry_info_section {
     background: #969696;
