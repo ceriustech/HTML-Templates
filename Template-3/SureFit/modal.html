@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Outfits</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/modal.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+ <!-- Navigation -->
+<nav class="navbar_header_menu navbar-fixed-top ">
+  <div class="container navbar_header_menu_links">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle navbar_mobile_menu" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar_logo flex_container">
+      <div class="navbar_logo_img">
+          <img src="Images/surefit_logo.png" alt="Image" class="img-responsive"/>
+      </div>
+       <div class="collapse navbar-collapse navbar_header_menu_links_ul" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="navbar_header_menu_li"><a href="#" class="navbar_header_menu_a no_hover">Features &#38; Benefits</a></li>
+            <li class="navbar_header_menu_li"><a href="#" class="navbar_header_menu_a no_hover">Why SureFit</a></li>
+            <li class="navbar_header_menu_li"><a href="#" class="navbar_header_menu_a no_hover">How it works</a></li>
+            <li class="navbar_header_menu_li"><a href="#" class="navbar_header_menu_a no_hover">About</a></li>
+            <li class="navbar_header_action_li"><a href="#" class="navbar_header_action_a no_hover">Contact Us</a></li>
+          </ul>                                                                 
+    </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Modal Overlay/Contact Form --->
+	<div class="modal_contact_form">
+		<div class="wrap_contact">
+			<form class="contact_form validate-form">
+				<span class="contact_form_header">
+					Contact Us
+				</span>                                                           
+				<h2 class="contact_form_header_p">Please fill-in your contact details and we will get in touch soon</h2>
+
+				<div class="contact_wrapper contact_wrap_input validate_input" data-validate="Name is required">
+					<input class="input100" type="text" name="fname" placeholder="First Name*">
+				</div>
+
+				<div class="contact_wrapper contact_wrap_input validate_input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input class="input100" type="text" name="lname" placeholder="Last Name*">
+				</div>
+
+				<div class="contact_wrapper">
+					<input class="input100" type="email" name="email" placeholder="Email*">
+				</div>
+				<div class="contact_wrapper">
+					<input class="input100" type="tel" name="telephone" placeholder="Phone Number">
+				</div>
+
+				<div class="contact_wrapper validate-input" data-validate = "Message is required">
+					<textarea class="input100" name="message" placeholder="Comments*"></textarea>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn modal_btn modal_btn_1">
+							Cancel
+						</button>
+						<button class="contact100-form-btn modal_btn modal_btn_2">
+							Send                                                                       
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+
+</body>
+</html>
