@@ -1,3 +1,50 @@
+/**** About Us ****/ 
+.about_us_section {
+    background: #F2F2F2;
+    height: 530px;
+}
+
+.about_us_contact_btn {
+    background: #43a9cb;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 15px 20px;
+    position: relative;
+    text-align: center;
+    width: 178px
+}
+
+.about_us_contact_btn_a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.about_us_info_img {
+    padding-left: 80px;
+}
+.about_us_info_h1 {
+    color: #EE2356;
+    font-size: 1.3em;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.about_us_info_h2 {
+    color: #646464;
+    font-size: 2.5em;
+    margin-bottom: 30px
+}
+
+.about_us_info_p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.about_us_info {
+    margin-top: 80px;
+}
 /**** App Info Section ****/
 .app_info_section {
     margin-top: 80px;
@@ -171,7 +218,7 @@
 
 .hero_image_h {
     font-size: 4.3em; ;
-    font-weight: 700;
+    font-weight: 600;
 }
 .hero_image_text {
     color: #fff;
@@ -179,12 +226,14 @@
 /**** How it works Section ****/
 .how_it_works_section {
     margin-top: 80px;
+    height: 700px;
 }
 
 .how_it_works_display_info_list_item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
 }
 
 .how_it_works_display_info_h {
@@ -202,8 +251,14 @@
     font-weight: 700;
 }
 
-.how_it_works_display_info_btn_container {
+.how_it_works_display_info_list_p_2 {
+    color: #4d4d4d;
+    font-size: 1.8em;
+    padding: 15px;
+}
 
+.how_it_works_display_info_btn {
+    margin-bottom: 
 }
 /**** Industry Info Section ****/
 .industry_info_section {
