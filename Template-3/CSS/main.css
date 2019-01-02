@@ -293,6 +293,42 @@
     z-index: 100;
 }
 /**** Why SureFit Section ****/
-.w_sfit_container {
+.w_sfit_section {
+    background: #F2F2F2;
+}
+
+.w_sfit_h {
+    font-weight: 800;
+}
+
+.w_sfit_header {
     margin-top: 80px;
+    text-align: center; 
+}
+
+.w_sfit_info {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.w_sfit_info_display_h {
+    color: #E42C59;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+.w_sfit_info_display_img {
+    padding-bottom: 45px;
+}
+.w_sfit_info_display_p {
+    color: #717171;
+    line-height: 1.6;
+    padding-right: 5px;
+}
+.w_sfit_info_display_text {
+    padding: 0 25px
 }
