@@ -339,6 +339,10 @@
     margin-bottom: 30px;
 }
 
+.how_it_works_display_info_list_btns {
+    height: 80px;
+}
+
 .how_it_works_display_info_list_p {
     font-size: 2em;
     font-weight: 700;
@@ -351,7 +355,8 @@
 }
 
 .how_it_works_display_info_btn {
-    margin-bottom: 
+    position: relative;
+    bottom: 30px;
 }
 /**** Industry Info Section ****/
 .industry_info_section {
