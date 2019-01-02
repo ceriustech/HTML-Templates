@@ -1,15 +1,4 @@
 /**** Modal Contact Form ****/
-
-.modal_icon {
-   font-size: 10px;
-}                                                            
-
-ul, li {
-	margin: 0px;
-	list-style-type: none;
-}
-
-
 /*---------------------------------------------*/
 input {
 	outline: none;
@@ -45,19 +34,24 @@ textarea:-moz-placeholder { color: #adadad;}
 textarea::-moz-placeholder { color: #adadad;}
 textarea:-ms-input-placeholder { color: #adadad;}
 
-/*---------------------------------------------*/
-/**** Contact Form ***/
+/****************************** Contact Form *******************************/
 
 .modal_btn {
 	outline: none !important;
 	border: none;
 }
 
+.modal_btn_1 {
+    color: #000 !important;
+    background: #fff
+    
+}
 .modal_btn_2 {
     background: #43A9CB;
     border-radius: 6px;
+    color: #fff;
     font-size: 1.2em;
-    
+    margin-left: 10px;
 }
 
 modal_btn:hover {
@@ -97,8 +91,7 @@ modal_btn:hover {
 }
 
 
-/*==================================================================
-/** Form **/
+/*********************** Form *************************************/
 
 .contact_form {
   width: 100%;
@@ -122,15 +115,21 @@ modal_btn:hover {
   text-align: left;
 }
 
-.contact_form_header_p {
+.contact_form_header_h {
     color: #646464;
     font-size: 1.6em;
 }
 
+.contact_form_header_p {
+    color: #646464;
+    font-size: 1.2em;
+}
 
+.contact_req_icon {
+    color: #EE2356; 
+}
 
-/*------------------------------------------------------------------
-[ Input ]*/
+/************************** Input ************************************/
 
 .contact_wrapper {
   width: 100%;
@@ -160,8 +159,6 @@ modal_btn:hover {
   margin-top: 10px;
 }
 
-
-/*---------------------------------------------*/
 input.input100 {
   height: 62px;
 }
@@ -177,42 +174,23 @@ textarea.input100 {
   background: #F2F2F2;
 }
 
-/*------------------------------------------------------------------
-[ Button ]*/
-.container-contact100-form-btn {
+/******************************* Buttons *********************************/
+.contact_form_btn_container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   margin-top: 5px;
 }
 
-.wrap-contact100-form-btn {
-  display: block;
+.contact_form_button_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   position: relative;
   z-index: 1;
   border-radius: 2px;
   overflow: hidden;
-}
-
-.contact100-form-bgbtn {
-  position: absolute;
-  z-index: -1;
-  width: 300%;
-  height: 100%;
-  background: #df2351;
-  background: -webkit-gradient(linear, right top, left top, from(#2f91ff), color-stop(#00c513), color-stop(#2f91ff), to(#00c513));
-  background: linear-gradient(right, #2f91ff, #00c513, #2f91ff, #00c513);
-  top: 0;
-  left: -100%;
-
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
 .contact100-form-btn {
@@ -228,43 +206,40 @@ textarea.input100 {
   padding: 0 20px;
   min-width: 150px;
   height: 62px;
-
-  font-family: Raleway-Bold;
   font-size: 16px;
-  color: #fff;
   line-height: 1.2;
-  text-transform: uppercase;
 }
 
+.contact_wrap_btn {
+    width: calc((100% - 20px) / 4);
+}
 .wrap-contact100-form-btn:hover .contact100-form-bgbtn {
   left: 0;
 }
 
 
-/*------------------------------------------------------------------
-[ Responsive ]*/
+/************************* Responsive **************************************/
 
 @media (max-width: 992px) {
-  .wrap-contact100 {
+  .wrap_contact {
     padding: 66px 80px 59px 80px;
   }
 }
 
 @media (max-width: 768px) {
-  .rs1-wrap-input100 {
+  .contact_wrap_input {
     width: 100%;
   }
 }
 
 @media (max-width: 576px) {
-  .wrap-contact100 {
+  .wrap_contact {
     padding: 66px 15px 59px 15px;
   }
 }
 
 
-/*------------------------------------------------------------------
-[ Alert validate ]*/
+/*********************** Alert Validation *****************************/
 
 .validate_input {
   position: relative;
@@ -329,7 +304,6 @@ textarea.input100 {
 .contact100-more {
   display: block;
   max-width: 960px;
-  font-family: Raleway-SemiBold;
   font-size: 20px;
   color: #fff;
   line-height: 1.4;
