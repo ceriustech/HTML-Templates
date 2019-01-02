@@ -315,10 +315,18 @@
     margin-top: 40px;
 }
 
+.w_sfit_info_display {
+    margin-bottom: 40px;
+}
+
 .w_sfit_info_display_h {
     color: #E42C59;
     font-size: 1.3em;
     font-weight: 800;
+}
+
+.w_sfit_info_display_p {
+    padding-right: 70px;
 }
 
 .w_sfit_info_display_img {
@@ -326,9 +334,13 @@
 }
 .w_sfit_info_display_p {
     color: #717171;
+    font-size: 1.2em;
     line-height: 1.6;
-    padding-right: 5px;
+}
+
+.w_sfit_info_display_stylist {
+    padding-left: 15px
 }
 .w_sfit_info_display_text {
-    padding: 0 25px
+    padding-left: 35px
 }
