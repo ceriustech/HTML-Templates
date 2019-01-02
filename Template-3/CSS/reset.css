@@ -51,6 +51,13 @@ h1, h2, h3, h4, h5, p, a {
     display: flex;
 }
 
+.google_play_btn {
+    width: 132px;
+}
+
+.apple_btn {
+    width: 132px;
+}
 .no_padding {
     padding: 0 !important; 
 }
