@@ -13,8 +13,17 @@
     .col_11 {width: 91.66%;}
     .col_12 {width: 100%;}
 }
-/************************* Laptop View **************************/
-@media screen and (max-width: 1024px) {
+/************************* Laptop/Tablet View **************************/
+@media screen and (max-width: 1198px) {
+/*========= Hero Image =============*/
+    .hero_image {
+        height: 500px !important;
+    }
+    
+    .hero_image_h {
+        font-size: 3em !important;
+        margin-top: 25px;
+    }
 /*========== Grid Demo Section ======*/
     .grid_demo_info_btn_container {
         display: -webkit-box;
@@ -27,6 +36,7 @@
         display: -ms-flexbox;
         display: flex;
     }
+    
 /*========= App Info Section =========*/
     .app_info_container {
         display: -webkit-box;
@@ -98,12 +108,71 @@
 }
 
 
+/************************* Tablet/Mobile View **************************/
+@media screen and (max-width: 990px) {
+ /*========= Hero Image =============*/
+    .hero_image {
+        height: 400px !important;
+    }
+    
+    .hero_image_action_btn {
+        width: 275px !important;
+    }
+/*========== Grid Demo Section ======*/
+    .grid_demo_display_image {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 500px;
+        margin: auto;
+    }
+    
+    .grid_demo_info_row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+/*============= How it Works Section =============*/
+    .how_it_works_section {
+        height: 1200px !important;
+    }
+    .how_it_works_container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    .how_it_works_display {
+        margin: auto;
+        width: 500px;
+    }
+    
+    .how_it_works_display_info {
+        width: 100%;
+    }
+/*============= About Us Section =============*/
+    .about_us_info_image {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        float: right;
+    }
+    
+    .about_us_info_img {
+        position: relative;
+        bottom: 55px;
+        width: 250px;
+        height: 150px;
+    }
 
-
-
-
-
-
+}
 
 
 
