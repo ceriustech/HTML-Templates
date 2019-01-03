@@ -104,23 +104,29 @@
                                 <p class="contact_form_header_p"><span class="contact_req_icon">*</span> denotes
                                     required field</p>
                             </div>
-                            <div class="contact_wrapper contact_wrap_input validate_input" data-validate="Name is required">
-                                <input class="input100" type="text" name="fname" placeholder="First Name*">
+                            <!-- <form> -->
+                            <div id="floatContainer" class="float_container contact_wrapper contact_wrap_input validate_input" data-validate="Name is required">
+                                <input id="float_field" class="input100" type="text" name="fname">
+                                <label class="label_overlay">First Name<span class="req_field">*</span></label>
                             </div>
 
-                            <div class="contact_wrapper contact_wrap_input validate_input" data-validate="Valid email is required: ex@abc.xyz">
-                                <input class="input100" type="text" name="lname" placeholder="Last Name*">
+                            <div id="floatContainer" class="float_container contact_wrapper contact_wrap_input validate_input" data-validate="Valid email is required: ex@abc.xyz">
+                                <input id="float_field" class="input100" type="text" name="lname">
+                                <label class="label_overlay">Last Name<span class="req_field">*</span></label>
                             </div>
 
-                            <div class="contact_wrapper">
-                                <input class="input100" type="email" name="email" placeholder="Email*">
+                            <div id="floatContainer" class="float_container contact_wrapper">
+                                <input id="float_field" class="input100" type="email" name="email">
+                                <label class="label_overlay">Email<span class="req_field">*</span></label>
                             </div>
-                            <div class="contact_wrapper">
-                                <input class="input100" type="tel" name="telephone" placeholder="Phone Number">
+                            <div id="floatContainer" class="float_container contact_wrapper">
+                                <input id="float_field" class="input100" type="tel" name="telephone">
+                                <label class="label_overlay">Phone Number<span class="req_field">*</span></label>
                             </div>
 
-                            <div class="contact_wrapper validate_input" data-validate="Message is required">
-                                <textarea class="input100" name="message" placeholder="Comments*"></textarea>
+                            <div id="floatContainer" class="float_container contact_wrapper validate_input" data-validate="Message is required">
+                                <textarea id="float_field" class="input100" name="message"></textarea>
+                                <label class="label_overlay">Comments<span class="req_field">*</span></label>
                             </div>
 
                             <div class="contact_form_btn_container">
@@ -164,7 +170,7 @@
         <div class="row">
            <!-- .col-md-4 -->
             <div class="col-md-5 grid_demo_display_image">
-                <img src="Images/Clothing%20Matched%20big%20image.jpg" class="img-responsive grid_demo_display_image_img" alt="Image">
+                <img src="Images/Clothing%20Matched%20big%20image.jpg" class="img-responsive" alt="Image">
             </div>
             <!-- /.col-md-8 -->
             <div class="col-lg-7">
@@ -494,6 +500,16 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
+</script>
+<script>
+    const floatField = document.getElementById('float_field');
+const floatContainer = document.getElementById('floatContainer');
+float_field.addEventListener('focus', () => {
+  float_container.classList.add('active');
+});
+floatField.addEventListener('blur', () => {
+  floatContainer.classList.remove('active');
+});
 </script>
 </body>
 </html>

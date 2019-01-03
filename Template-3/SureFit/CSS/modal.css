@@ -146,7 +146,10 @@ modal_btn:hover {
 }
 
 /************************** Input ************************************/
-
+.active {
+    -webkit-transform: translate(0, 4px) scale(.75);
+    transform: translate(0, 4px) scale(.75);
+}
 .contact_wrapper {
   width: 100%;
   position: relative;
@@ -177,8 +180,27 @@ modal_btn:hover {
 
 input.input100 {
   height: 62px;
+    position: relative;
 }
 
+.label_overlay {
+    color: #646464;
+    font-family: Gilroy;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 21px;
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    -webkit-transform: translate(0, 16px) scale(1);
+    transform: translate(0, 16px) scale(1);
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+
+.req_field {
+    color: #E42C59;
+}
 
 textarea.input100 {
   min-height: 162px;
