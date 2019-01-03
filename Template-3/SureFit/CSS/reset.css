@@ -46,8 +46,7 @@ ul, li {
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 5px;
-    position: relative;
-      }
+    }
 
 .flex_container_2 {
     display: -webkit-box;
@@ -88,12 +87,6 @@ ul, li {
 .no_margin {
     margin: 0 !important; 
     padding: 0 !important;
-}
-
-/** Modified Slick Classes **/
-
-.slick-active {
-    width: 0px !important;
 }
 
 
