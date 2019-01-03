@@ -1,30 +1,37 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy-light.eot'); /*/ IE9 Compat Modes /*/
+    src: url('../fonts/gilroy-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/gilroy-light.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/gilroy-light.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/gilroy-light.otf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/gilroy-light.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+  @font-face {
+    font-family: 'Gilroybold';
+    src: url('../fonts/gilroy-extrabold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/gilroy-extrabold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */      
+         url('../fonts/gilroy-extrabold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/gilroy-extrabold.otf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/gilroy-extrabold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+  @font-face {
+    font-family: 'Gilroymedium';
+    src: url('../fonts/Gilroy-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */      
+         url('../fonts/Gilroy-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/Gilroy-Medium.otf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Gilroy-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+h1, h2, h3, h4, h5, p, input, label, button {
+    font-family: 'Gilroy' !important; 
+}
+
 /**** About Us ****/ 
 .about_us_section {
     background: #F2F2F2;
     height: 530px;
-}
-
-.about_us_contact_btn {
-    background: #43a9cb;
-    border-radius: 6px;
-    cursor: pointer;
-    padding: 25px 20px;
-    position: relative;
-    text-align: center;
-    width: 178px
-}
-
-.about_us_contact_btn_a {
-    color: #fff;
-    display: block;
-    font-size: 1.2em;
-    font-weight: 600;
-    padding: 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-decoration: none !important;
 }
 
 .about_us_info_img {
@@ -91,33 +98,32 @@
 .app_info_text_h2 {
     font-size: 1.2em;
 }
+
+.btn_primary {
+    font-family: gilroymedium;
+    color: #fff;
+    font-size: 15px;
+    background: #43a9cb;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 15px 35px;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    border: 1px solid transparent;
+    height: 45px;
+}
+    .btn_primary:hover {
+     background-color: white !important; 
+     color: #43a9cb; 
+     border: 1px solid #43a9cb; 
+     text-decoration: none !important; 
+    }
+
 /**** Call to action Section ****/
 .c_to_action_section {
     margin-top: 80px;
     height: 275px;
-}
-
-.c_to_action_btn {
-    background: #43A9CB;
-    border-radius: 6px;
-    cursor: pointer;
-    width: 25%;
-    margin: auto;
-    padding: 25px 15px;
-    position: relative;
-}
-
-.c_to_action_btn_a {
-    color: #fff;
-    display: block;
-    font-size: 1.2em;
-    font-weight: 600;
-    padding-top: 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    
 }
 
 .c_to_action_container {
@@ -146,29 +152,6 @@
 .footer_container {
     color: #fff;
 }
-
-.footer_contact_btn {
-    background: #43A9CB;
-    border-radius: 6px;
-    cursor: pointer;
-    float: right;
-    padding: 25px 20px;
-    position: relative;
-    text-align: center;
-    width: 60%;
-}
-
-.footer_contact_btn_a {
-    color: #fff;
-    display: block;
-    font-size: 1.2em;
-    font-weight: 600;
-    padding-top: 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
 .footer_info {
     margin-top: 50px;
 }
@@ -184,8 +167,11 @@
 }
 
 .f_b_header_text_h {
-    font-size: 3em;
+    font-size: 36px;
     line-height: 1.3;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 27px;
 }
 /* Grid Demo*/
 .grid_demo_section {
@@ -200,32 +186,8 @@
     width: 90%;
 }
 
-.grid_demo_info_btn {
-    border: 2px solid #43A9CB;
-    border-radius: 6px;
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-    width: 40%;
-    height: 50px;
-}
-
 .grid_demo_info_btn_container {
     margin-top: 30px;
-}
-
-.grid_demo_info_btn_a {
-    color: #43A9CB;
-    display: block;
-    font-size: .8em;
-    font-weight: 600;
-    padding: 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-decoration: none !important;
-    width: 100%;
-    height: 100%;
 }
 
 
@@ -243,18 +205,10 @@
     position: relative;
 }
 
-.grid_demo_info_row {
-    
-}
-
 .grid_display_text_header_h {
     color: #59595b;
     font-size: 1.1em;
     font-weight: 600;
-}
-
-.grid_display_logo_container {
-    
 }
 
 .grid_display_logo_img {
@@ -277,31 +231,9 @@
     margin-top: 85px;
     position: relative;
 }
-
-.hero_image_action_a {
-    color: #fff;
-    display: block;
-    font-size: 1.2em;
-    font-weight: 600;
-    padding: 15px 0;
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    text-decoration: none !important;
-}
-
 .hero_image_action_btn {
-    background: #43a9cb;
-    border-radius: 6px;
-    cursor: pointer;
-    padding: 25px 0;
-    position: relative;
-    width: 30%;
-    text-align: center;
+    margin-top: 50px;
 }
-
 .hero_image_dot {
     font-size: 5px;
     padding: 10px;
@@ -356,7 +288,7 @@
 
 .how_it_works_display_info_btn {
     position: relative;
-    top: 10px;
+    bottom: 30px;
 }
 /**** Industry Info Section ****/
 .industry_info_section {
@@ -416,32 +348,36 @@
     line-height: 1.6;
     margin-bottom: 30px;
 }
+
 /**** Navigation Menu ****/
-.navbar_header_action_li {
+
+.navbar_header_action_a {
+    font-family: gilroymedium;
+    color: #fff;
+    font-size: 15px;
     background: #43a9cb;
     border-radius: 6px;
     cursor: pointer;
     margin-left: 30px;
-    padding: 0 35px;
+    padding: 12px 35px !important;
     position: relative;
+    text-align: center;
+    width: 200px;
+    border: 1px solid transparent;
 }
-.navbar_header_action_a {
-    color: #fff;
-    display: block;
-    font-size: 1.2em;
-    font-weight: 600;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.navbar_header_action_a:hover {
+ background-color: white !important; 
+ color: #43a9cb; 
+ border: 1px solid #43a9cb; 
 }
-
 .navbar_header_menu {
     background-color:#fff;
     height: 85px;
-    position: relative;
 }
-
+.navbar_header_menu_a {
+    font-family: gilroymedium;
+    font-size: 15px;
+}
 .navbar_header_menu_links {
     padding: 20px;
 }

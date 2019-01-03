@@ -77,13 +77,15 @@
         flex-direction: column;
     }
 /*============= How it Works Section =============*/
-    .google_play_btn {
-        height: px;
-    }
     .how_it_works_container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+    }
+    
+    .how_it_works_display_info_btn {
+        position: relative;
+        top: 15px;
     }
 /*============= About Us Section =============*/
     .about_us_info_image {
@@ -95,15 +97,16 @@
     
     .about_us_info_img {
         position: relative;
-        bottom: 95px;
-        width: 350px;
-        height: 250px;
+        bottom: 5px;
+        width: 250px;
+        height: 150px;
     }
 /*============= Footer Section =============*/
     .footer_info {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -116,7 +119,7 @@
     }
     
     .hero_image_action_btn {
-        width: 275px !important;
+        width: 295px !important;
     }
 /*========== Grid Demo Section ======*/
     .grid_demo_display_image {
@@ -167,13 +170,109 @@
     
     .about_us_info_img {
         position: relative;
-        bottom: 55px;
+        bottom: 15px;
         width: 250px;
         height: 150px;
     }
 
 }
 
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 500px) {
+    /*========= Hero Image =============*/
+    .hero_image {
+        height: 300px !important;
+    }
+    
+    .hero_image_h {
+    }
+/*========== Grid Demo Section ======*/
+    .grid_demo_info_btn_container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    
+    .grid_demo_info_row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    
+/*========= App Info Section =========*/
+    .app_info_container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    
+    .app_info_text {
+        margin-top: 0 !important;
+    }
+/*========= Info Display Section ========*/
+    .info_display_img_container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    
+    .info_display_text_h {
+        text-align: center;
+    }
+/*========== Industry Info Section ============*/
+    .industry_info_container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+/*============= Why SureFit Section =============*/
+    .w_sfit_info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+/*============= How it Works Section =============*/
+    .google_play_btn {
+        height: px;
+    }
+    .how_it_works_container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+/*============= About Us Section =============*/
+    .about_us_info_image {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        float: right;
+    }
+    
+    .about_us_info_img {
+        position: relative;
+        bottom: 95px;
+        width: 350px;
+        height: 250px;
+    }
+/*============= Footer Section =============*/
+    .footer_info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+}
 
 
 

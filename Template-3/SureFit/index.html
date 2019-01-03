@@ -8,11 +8,42 @@
   <link rel="stylesheet" href="CSS/responsive.css">
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="stylesheet" href="CSS/modal.css">
+  <link rel="stylesheet" href="CSS/responsive.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    #fullscreen_dropdown_box {
+    padding-right: 0 !important;
+}
+.modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+  }
+  .modal-header {
+    border-bottom: none !important;
+}
+
+  .wrap_contact {
+    padding: 0 !important;
+    max-width: 600px;
+    margin-top: -200px;
+}
+@media (min-width: 1200px) {
+.navbar_header_menu_links {
+    width: 1260px !important;
+}
+}
+</style>
 </head>
 <body>
  <!-- Navigation -->
@@ -35,7 +66,9 @@
             <li class="navbar_header_menu_li"><a href="#" class="navbar_header_menu_a no_hover">Why SureFit</a></li>
             <li class="navbar_header_menu_li"><a href="#" class="navbar_header_menu_a no_hover">How it works</a></li>
             <li class="navbar_header_menu_li"><a href="#" class="navbar_header_menu_a no_hover">About</a></li>
-            <li id="navbar_header_btn" class="navbar_header_action_li" onclick="function()"><a href="#" class="navbar_header_action_a no_hover">Contact Us</a></li>
+            <li id="navbar_header_btn" class="navbar_header_action_li">
+                <a href="javascript:void(0);" class="open_contact_modal navbar_header_action_a btn_primary">Contact Us</a>
+            </li>
           </ul>
     </div>
     </div>
@@ -43,49 +76,60 @@
 </nav>
 
 <!--- Contact Form Modal Overlay --->
-<div id="fullscreen_dropdown_box" class="fullscreen_dropdown_box">
-    <div class="modal_contact_form">
-		<div class="wrap_contact">
-			<form class="contact_form validate-form">
-				<span class="contact_form_header">
-					Contact Us
-				</span>
-				<div class="contact_form_header_text">
-				    <h2 class="contact_form_header_h">Please fill-in your contact details and we will get in touch soon</h2>
-				    <p class="contact_form_header_p"><span class="contact_req_icon">*</span> denotes required field</p>
-				</div>                                                           
-				<div class="contact_wrapper contact_wrap_input validate_input" data-validate="Name is required">
-					<input class="input100" type="text" name="fname" placeholder="First Name*">
-				</div>
+<div id="fullscreen_dropdown_box" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_contact_form">
+                    <div class="wrap_contact">
+                        <form class="contact_form validate-form" id="contact_form">
+                            <span class="contact_form_header">
+                                Contact Us
+                            </span>
+                            <div class="contact_form_header_text">
+                                <h2 class="contact_form_header_h">Please fill-in your contact details and we will get
+                                    in touch soon</h2>
+                                <p class="contact_form_header_p"><span class="contact_req_icon">*</span> denotes
+                                    required field</p>
+                            </div>
+                            <div class="contact_wrapper contact_wrap_input validate_input" data-validate="Name is required">
+                                <input class="input100" type="text" name="fname" placeholder="First Name*">
+                            </div>
 
-				<div class="contact_wrapper contact_wrap_input validate_input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input class="input100" type="text" name="lname" placeholder="Last Name*">
-				</div>
+                            <div class="contact_wrapper contact_wrap_input validate_input" data-validate="Valid email is required: ex@abc.xyz">
+                                <input class="input100" type="text" name="lname" placeholder="Last Name*">
+                            </div>
 
-				<div class="contact_wrapper">
-					<input class="input100" type="email" name="email" placeholder="Email*">
-				</div>
-				<div class="contact_wrapper">
-					<input class="input100" type="tel" name="telephone" placeholder="Phone Number">
-				</div>
+                            <div class="contact_wrapper">
+                                <input class="input100" type="email" name="email" placeholder="Email*">
+                            </div>
+                            <div class="contact_wrapper">
+                                <input class="input100" type="tel" name="telephone" placeholder="Phone Number">
+                            </div>
 
-				<div class="contact_wrapper validate_input" data-validate = "Message is required">
-					<textarea class="input100" name="message" placeholder="Comments*"></textarea>
-				</div>
+                            <div class="contact_wrapper validate_input" data-validate="Message is required">
+                                <textarea class="input100" name="message" placeholder="Comments*"></textarea>
+                            </div>
 
-				<div class="contact_form_btn_container">
-					<div class="contact_form_button_wrapper">
-						<button class="contact100-form-btn modal_btn modal_btn_1 contact_wrap_btn">
-							Cancel
-						</button>
-						<button class="contact100-form-btn modal_btn modal_btn_2 contact_wrap_btn">
-							Send                                                                       
-						</button>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
+                            <div class="contact_form_btn_container">
+                                <div class="contact_form_button_wrapper">
+                                    <button class="contact100-form-btn modal_btn modal_btn_1 contact_wrap_btn">
+                                        Cancel
+                                    </button>
+                                    <button class="contact100-form-btn modal_btn modal_btn_2 contact_wrap_btn">
+                                        Send
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!--- /Contact Form Modal Overlay End -->
 <!-- Jumbotron Hero Image -->
@@ -94,7 +138,7 @@
     <h2 class="hero_image_h">Fit is the most frustrating part of<br>online shopping.</h2> 
     <h2 class="hero_image_h">We're here to fix that.</h2>     
     <p class="hero_image_p">Automated measuring<i class="fas fa-circle hero_image_dot"></i>Fit Guidance<i class="fas fa-circle hero_image_dot"></i>Self visualization</p>
-    <div class="hero_image_action_btn"><a href="#" class="hero_image_action_a no_hover">Learn how SureFit can work for you</a></div>
+    <div class="hero_image_action_btn"><a href="javascript:void(0);" class="open_contact_modal hero_image_action_a btn_primary">Learn how SureFit can work for you</a></div>
   </div>
 </div>
 
@@ -120,8 +164,8 @@
                     <h1 class="grid_demo_info_h">Clothing matched to your  unique body.</h1>
                 <p class="grid_demo_info_p">SureFit technology analyzes your body measurements against garment measurements to give you a true-to-size recommendation, for a first time fit without even trying clothes on.</p>
                 <div class="grid_demo_info_btn_container">
-                    <div class=" btn-lg grid_demo_info_btn">
-                        <a href="#" class="grid_demo_info_btn_a no_hover">Learn how it works</a>
+                    <div>
+                        <a href="javascript:void(0);" class="grid_demo_info_btn_a btn_primary">Learn how it works</a>
                     </div>
                 </div>  
                   </div>
@@ -129,7 +173,7 @@
                <!-- grid demo info images -->
                <div class="grid_demo_info_images col-lg-12">
                    <div class="grid_demo_info_row">
-                      <div class="col-lg-4 col_4">
+                      <div class="col-lg-4">
                          <div class="grid_display">
                              <img src="Images/clothing%20item%2001.jpg" class="img-responsive grid_display_img" alt="Image">
                              <div class="grid_display_text">
@@ -144,7 +188,7 @@
                              </div>
                          </div>
                     </div>
-                    <div class="col-lg-4 col_4">
+                    <div class="col-lg-4">
                          <div class="grid_display">
                              <img src="Images/clothing%20item%2002.jpg" class="img-responsive grid_display_img" alt="Image">
                              <div class="grid_display_text">
@@ -159,12 +203,12 @@
                              </div>
                          </div>
                     </div>
-                    <div class="col-lg-4 col_4">
+                    <div class="col-lg-4">
                          <div class="grid_display">
                              <img src="Images/clothing%20item%2003.jpg" class="img-responsive grid_display_img" alt="Image">
                              <div class="grid_display_text">
                                 <div class="grid_display_text_header">
-                                    <h4 class="grid_display_text_header_h">Samantha Shaded Ripped Vintage Jacket</h4>
+                                    <h4 class="grid_display_text_header_h">Ripped Vintage Jacket</h4>
                                     <p class="grid_display_text_header_p">Mavi Jeans</p>
                                     <div class="grid_display_logo_container flex_container_2">
                                         <img src="Images/surefit_logo.png" alt="Image" class="img-responsive grid_display_logo_img"/>
@@ -205,14 +249,14 @@
     <!-- Info Display Section -->
     <section class="info_display_section">
         <div class="info_display_container">
-            <div class="info_display_img_container col-lg-7 col_12">
+            <div class="info_display_img_container col-lg-7">
                 <img src="Images/MBPro.jpg" class="img-responsive grid_display_img" alt="Image">
             </div>
             <div class="info_display_text col-lg-5">
                 <h1 class="info_display_text_h">Try before you buy.</h1>
                 <p class="info_display_text_p">Imagine a world where you could see yourself in that "perfect outfit" long before you go to the store or before it arrives in the mail?</p>
-                <p class="info_display_text_p">You now live in  that world!</p>
-                <p class="info_display_text_p">SureFit allows yo uto do just that from the comfort of anywhere. You can shop all the brands you love and have them virtually added to your selfie via our virtual fitting room.</p>
+                <p class="info_display_text_p">You now live in that world!</p>
+                <p class="info_display_text_p">SureFit allows you to do just that from the comfort of anywhere. You can shop all the brands you love and have them virtually added to your selfie via our virtual fitting room.</p>
             </div>
         </div>
     </section>
@@ -298,7 +342,7 @@
            </div>
            <div class="how_it_works_display_info col-lg-7 col_6">
                <div class="how_it_works_display_info_header">
-                   <h1 class="how_it_works_display_info_h">Fixing the fit means bringing technology into tyhe equation.</h1>
+                   <h1 class="how_it_works_display_info_h">Fixing the fit means bringing technology into the equation.</h1>
                    <h1 class="how_it_works_display_info_h_2">Here's how it works</h1>
                </div>
                <div class="how_it_works_display_info_list">
@@ -336,9 +380,9 @@
        <div class="about_us_info">
           <div class="about_us_info_text col-lg-6">
               <h1 class="about_us_info_h1">About Us</h1>
-               <h2 class="about_us_info_h2">We're on a mission to help everyone find their perfiect fit.</h2>
-               <p class="about_us_info_p">No matter their shape we believe everyone should be empowered to discover their personal syle in a comfortable and private setting. They should aslo know, long before their clothing arrives in the mail, that it will fit perfectly. it's why we engineered and patented the SureFit&#8482; technology in the heart of our app.</p>
-               <div class="about_us_contact_btn "><a href="#" class="about_us_contact_btn_a no_hover">Contact Us</a></div>
+               <h2 class="about_us_info_h2">We're on a mission to help everyone find their perfect fit.</h2>
+               <p class="about_us_info_p">No matter their shape we believe everyone should be empowered to discover their personal style in a comfortable and private setting. They should aslo know, long before their clothing arrives in the mail, that it will fit perfectly. it's why we engineered and patented the SureFit&#8482; technology in the heart of our app.</p>
+               <div class="about_us_contact_btn"><a href="javascript:void(0);" class="open_contact_modal about_us_contact_btn_a btn_primary">Contact Us</a></div>
           </div>
           <div class="about_us_info_image col-lg-6">
               <img src="Images/Vertical.png" alt="Image" class="about_us_info_img"/>
@@ -349,9 +393,9 @@
 <!-- Call to action section -->
 <section class="c_to_action_section">
     <div class="c_to_action_container container">
-        <h1 class="c_to_action_h1 col_12">IT STARTS WITH A CONVERSATION</h1>
-        <h2 class="c_to_action_h2 col_12">Are you ready to fix the frustration around fit?</h2>
-        <div class="c_to_action_btn col_12"><a href="#" class="c_to_action_btn_a no_hover">Let's chat</a></div>
+        <h1 class="c_to_action_h1">IT STARTS WITH A CONVERSATION</h1>
+        <h2 class="c_to_action_h2">Are you ready to fix the frustration around fit?</h2>
+        <div class="c_to_action_btn"><a href="javascript:void(0);" class="open_contact_modal c_to_action_btn_a btn_primary">Let's chat</a></div>
     </div>
 </section>
 
@@ -363,29 +407,72 @@
 <footer class="footer_section ">
  <div class="footer_container container">
     <div class="footer_info">
-        <div class="footer_col_1 col-lg-3 col_4">
+        <div class="footer_col_1 col-lg-3">
         <p class="footer_p footer_p_h">&copy; 2018 SureFit</p>
         <p class="footer_p">Privacy Policy</p>
         <p class="footer_p">Terms &amp; Conditions</p>
      </div>
-     <div class="footer_col_2 col-lg-3 col_4">
+     <div class="footer_col_2 col-lg-3">
          <p class="footer_p footer_p_h">Contact us</p> 
          <p class="footer_p">info&commat;surefit.co</p>
          <p class="footer_p">1-415-244-0467</p>
      </div>
-     <div class="footer_col_3 col-lg-5 col_4">
-        <div class="footer_contact_btn"><a href="#" class="footer_contact_btn_a no_hover">Contact us</a></div>
+     <div class="footer_col_3 col-lg-5">
+        <div class="footer_contact_btn"><a href="javascript:void(0);" class="open_contact_modal footer_contact_btn_a btn_primary">Contact us</a></div>
      </div>
     </div>
  </div>
 </footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/additional-methods.js" crossorigin="anonymous"></script>
+<script src="jquery.tooltip.validate.js"></script>
 
 <script>
- //opens and closes fullscreen menu   
-    $('#navbar_header_btn').on('click', function(){
-         $('#fullscreen_dropdown_box').toggleClass('fullscreen_activated')         
-    })    
-</script>
+$(function(){
+    $(".open_contact_modal").on('click', function(){
+        $('#fullscreen_dropdown_box').modal('show')
 
+    })
+})
+</script>
+<script>
+    //Form validation
+    $(function () {
+            $("#contact_form").validate({
+                onfocusout: function (element) {
+                    $(element).valid(), $(element).hasClass("successfulvalidation") && ($(element).next().removeClass("validatedfail"), $(element).next().addClass("validatedcheck")), $(element).hasClass("didnotvalidate") && $(element).next().next().addClass("validatedfail")
+                },
+                errorPlacement: function (error, element) {
+                    error.insertBefore(element)
+                },
+                errorClass: "didnotvalidate",
+                validClass: "successfulvalidation",
+                messages: {
+                    firstName: "Please enter your first name",
+                    lastName: "Please enter your last name", 
+                    email: "Please enter a valid email address", 
+                    comments: "Please endter a comment to ensure contact"
+                },
+                rules: {
+                    firstName: {
+                        required: !0
+                    },
+                    lastName: {
+                        required: !0
+                    }, 
+                    email: {
+                        required: !0
+                    }
+                },
+                invalidHandler: function (form, validator) {
+                    $("#validationerrorbox").html('<div class="alert alert-danger">There ' + (validator.numberOfInvalids() > 1 ? "are " : "is ") + validator.numberOfInvalids() + " issue" + (validator.numberOfInvalids() > 1 ? "s" : "") + " in the form. Please fill in the required field" + (validator.numberOfInvalids() > 1 ? "s." : ".") + "</div>")
+                }
+            })
+        })
+        
+</script>
 </body>
 </html>

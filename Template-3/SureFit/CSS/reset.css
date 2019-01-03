@@ -20,10 +20,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-h1, h2, h3, h4, h5, p, a {
-    font-family: Gilroy;
-}
-
 ul, li {
 	list-style-type: none;
 }
