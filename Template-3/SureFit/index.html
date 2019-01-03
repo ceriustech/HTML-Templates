@@ -49,18 +49,11 @@
  <!-- Navigation -->
 <nav class="navbar_header_menu navbar-fixed-top ">
   <div class="container navbar_header_menu_links">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle navbar_mobile_menu" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
     <div class="navbar_logo flex_container">
       <div class="navbar_logo_img">
           <img src="Images/surefit_logo.png" alt="Image" class="img-responsive"/>
       </div>
-       <div class="collapse navbar-collapse navbar_header_menu_links_ul" id="myNavbar">
+       <div id="navbar_main" class=" navbar_header_menu_links_ul navbar_top">
           <ul class="nav navbar-nav">
             <li class="navbar_header_menu_li"><a href="#" class="navbar_header_menu_a no_hover">Features &#38; Benefits</a></li>
             <li class="navbar_header_menu_li"><a href="#" class="navbar_header_menu_a no_hover">Why SureFit</a></li>
@@ -70,11 +63,27 @@
                 <a href="javascript:void(0);" class="open_contact_modal navbar_header_action_a btn_primary">Contact Us</a>
             </li>
           </ul>
-    </div>
+      </div>
+      <!-- Button to open the overlay navigation -->
+      <div class="navbar_mobile_menu_icon" onclick="openNav()"><i class="fas fa-bars mobile_icon"></i></div>
     </div>
   </div>
 </nav>
 
+<!-- Mobile Menu overlay -->
+<div id="myNav" class="mobile_navbar_overlay">
+  <a href="javascript:void(0)" class="close_btn" onclick="closeNav()">&times;</a>
+  <div class="overlay_content">
+    <a class="mobile_navbar_overlay_a" href="#">Features</a>
+    <a class="mobile_navbar_overlay_a" href="#">Why SureFit</a>
+    <a class="mobile_navbar_overlay_a" href="#">How it works</a>
+    <a class="mobile_navbar_overlay_a" href="#">About</a>
+    <a href="javascript:void(0);" class="open_contact_modal navbar_header_action_a btn_primary mobile_contact">Contact Us</a>
+  </div>
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span onclick="openNav()">open</span>
 <!--- Contact Form Modal Overlay --->
 <div id="fullscreen_dropdown_box" class="modal fade" role="dialog">
     <div class="modal-dialog" role="document">
@@ -473,6 +482,18 @@ $(function(){
             })
         })
         
+</script>
+
+<script>
+    /* Open */
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
 </script>
 </body>
 </html>

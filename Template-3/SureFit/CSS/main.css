@@ -406,9 +406,73 @@ h1, h2, h3, h4, h5, p, input, label, button {
     left: 0;
 }
 
-.navbar_mobile_menu {
-    z-index: 100;
+.navbar_mobile_menu_icon {
+    display: none;
 }
+
+.navbar_top {
+    position: relative;
+}
+/*============================Mobile Menu Overlay =============================*/
+.mobile_navbar_overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  background-color: rgba(255,255,255, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay_content {
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 110px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mobile_contact {
+    margin: auto;
+}
+
+.mobile_navbar_overlay_a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.mobile_navbar_overlay_a:hover, .mobile_navbar_overlay_a:focus {
+  color: #f1f1f1;
+}
+
+.close_btn {
+    color: color: #EE2356 !important;
+    position: absolute;
+    top: 95px;
+    right: 45px;
+    font-size: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .mobile_navbar_overlay {overflow-y: auto;}
+  .mobile_navbar_overlay_a {font-size: 20px}
+  .mobile_navbar_overlay .close_btn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/*===========================Mobile Menu Overlay End =========================*/
 /**** Why SureFit Section ****/
 .w_sfit_section {
     background: #F2F2F2;

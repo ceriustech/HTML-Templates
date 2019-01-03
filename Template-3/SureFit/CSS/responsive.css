@@ -113,6 +113,13 @@
 
 /************************* Tablet/Mobile View **************************/
 @media screen and (max-width: 990px) {
+ /*========= Navigation =============*/
+    .navbar_mobile_menu_icon {
+        display: block !important;
+    }
+    .navbar_top {
+        display: none;
+    }
  /*========= Hero Image =============*/
     .hero_image {
         height: 400px !important;
