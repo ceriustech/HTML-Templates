@@ -1,91 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Outfits</title>
+  <title>SureFit</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/responsive.css">
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="stylesheet" href="CSS/modal.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="CSS/responsive.css">
 </head>
-<body>
- <!-- Navigation -->
-<nav class="navbar_header_menu navbar-fixed-top ">
-  <div class="container navbar_header_menu_links">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle navbar_mobile_menu" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
-    </div>
-    <div class="navbar_logo flex_container">
       <div class="navbar_logo_img">
           <img src="Images/surefit_logo.png" alt="Image" class="img-responsive"/>
       </div>
-       <div class="collapse navbar-collapse navbar_header_menu_links_ul" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li class="navbar_header_menu_li"><a href="#" class="navbar_header_menu_a no_hover">Features &#38; Benefits</a></li>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="navbar_header_menu_li"><a href="#" class="navbar_header_menu_a no_hover">Features &#38; Benefits</a></li>
             <li class="navbar_header_menu_li"><a href="#" class="navbar_header_menu_a no_hover">Why SureFit</a></li>
             <li class="navbar_header_menu_li"><a href="#" class="navbar_header_menu_a no_hover">How it works</a></li>
             <li class="navbar_header_menu_li"><a href="#" class="navbar_header_menu_a no_hover">About</a></li>
-            <li class="navbar_header_action_li"><a href="#" class="navbar_header_action_a no_hover">Contact Us</a></li>
-          </ul>                                                                 
-    </div>
+            <li id="navbar_header_btn" class="navbar_header_action_li" onclick="function()"><a href="#" class="navbar_header_action_a no_hover">Contact Us</a></li>
+      </ul>
     </div>
   </div>
 </nav>
+<!--- Hero Image -->
+<div class="jumbotron hero_image">
+  <div class="container hero_image_text">
+    <h2 class="hero_image_h">Fit is the most frustrating part of<br>online shopping.</h2> 
+    <h2 class="hero_image_h">We're here to fix that.</h2>     
+    <p class="hero_image_p">Automated measuring<i class="fas fa-circle hero_image_dot"></i>Fit Guidance<i class="fas fa-circle hero_image_dot"></i>Self visualization</p>
+    <div class="hero_image_action_btn"><a href="#" class="hero_image_action_a no_hover">Learn how SureFit can work for you</a></div>
+  </div>
+</div>
 
-<!-- Modal Overlay/Contact Form --->
-	<div class="modal_contact_form">
-		<div class="wrap_contact">
-			<form class="contact_form validate-form">
-				<span class="contact_form_header">
-					Contact Us
-				</span>
-				<div class="contact_form_header_text">
-				    <h2 class="contact_form_header_h">Please fill-in your contact details and we will get in touch soon</h2>
-				    <p class="contact_form_header_p"><span class="contact_req_icon">*</span> denotes required field</p>
-				</div>                                                           
-				<div class="contact_wrapper contact_wrap_input validate_input" data-validate="Name is required">
-					<input class="input100" type="text" name="fname" placeholder="First Name*">
-				</div>
+<!-- Container (Features & Benefits Section) -->
+<section class="f_b_section">
+     <div class="container-fluid container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="f_b_header_text text-center">
+          <h1 class="f_b_header_text_h">Our revolutionary platform takes your selfie then determines your size recommendation and fit detatils allowing you to try clothes on virtually before you purchase.</h1>
+      </div>
+    </div>
+  </div>
+</div>   
+</section>
 
-				<div class="contact_wrapper contact_wrap_input validate_input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input class="input100" type="text" name="lname" placeholder="Last Name*">
-				</div>
+<!-------- Grid Demo Section -------------->
+<div class="grid_demo_section container container-fluid bg-grey">
+ <!-- row -->
+  <div class="row">
+    <!-- .col-md-5 -->
+            <div class="col-md-5">
+                <img src="Images/Clothing%20Matched%20big%20image.jpg" class="img-responsive" alt="Image">
+            </div>
+    <div class="col-lg-7">
+               <div class="grid_demo_info col-lg-8">
+                  <div class="grid_demo_info_header">
+                    <h1 class="grid_demo_info_h">Clothing matched to your  unique body.</h1>
+                <p class="grid_demo_info_p">SureFit technology analyzes your body measurements against garment measurements to give you a true-to-size recommendation, for a first time fit without even trying clothes on.</p>
+                <div class="grid_demo_info_btn_container">
+                    <div class=" btn-lg grid_demo_info_btn">
+                        <a href="#" class="grid_demo_info_btn_a no_hover">Learn how it works</a>
+                    </div>
+                </div>  
+                  </div>
+               </div>
+   </div>
+   <div class="grid_demo_info_images col-lg-7">
+                   <div class="grid_demo_info_row">
+                      <div class="col-lg-4 col_4">
+                         <div class="grid_display">
+                             <img src="Images/clothing%20item%2001.jpg" class="img-responsive" alt="Image">
+                             <div class="grid_display_text">
+                                <div class="grid_display_text_header">
+                                    <h4 class="grid_display_text_header_h">Sadie Pants</h4>
+                                    <p class="grid_display_text_header_p">Heartloom</p>
+                                    <div class="grid_display_logo_container flex_container_2">
+                                        <img src="Images/surefit_logo.png" alt="Image" class="img-responsive grid_display_logo_img"/>
+                                        <p class="grid_display_logo_p">Medium</p>
+                                    </div>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 col_4">
+                         <div class="grid_display">
+                             <img src="Images/clothing%20item%2002.jpg" class="img-responsive" alt="Image">
+                             <div class="grid_display_text">
+                                <div class="grid_display_text_header">
+                                    <h4 class="grid_display_text_header_h">Surplice top</h4>
+                                    <p class="grid_display_text_header_p">Lush</p>
+                                    <div class="grid_display_logo_container flex_container_2">
+                                        <img src="Images/surefit_logo.png" alt="Image" class="img-responsive grid_display_logo_img"/>
+                                        <p class="grid_display_logo_p">Small</p>
+                                    </div>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 col_4">
+                         <div class="grid_display">
+                             <img src="Images/clothing%20item%2003.jpg" class="img-responsive" alt="Image">
+                             <div class="grid_display_text">
+                                <div class="grid_display_text_header">
+                                    <h4 class="grid_display_text_header_h">Samantha Shaded Ripped Vintage Jacket</h4>
+                                    <p class="grid_display_text_header_p">Mavi Jeans</p>
+                                    <div class="grid_display_logo_container flex_container_2">
+                                        <img src="Images/surefit_logo.png" alt="Image" class="img-responsive grid_display_logo_img"/>
+                                        <p class="grid_display_logo_p">Small</p>
+                                    </div>
+                                </div>
+                             </div>
+                         </div>
+                    </div> 
+                   </div>
+      </div> 
+               </div>
+</div>
+<!-- /row end -->
+<!------------------ App Info Section ----------------->
+<section class="app_info_section">
+        <div class="row app_info_container">
+           <div class="app_info_text col-lg-6 col_6">
+               <h1 class="app_info_text_h">Guidance about your size in any brand or style.</h1>
+               <p class="app_info_text_p">Brands, styles, and different styles within brands seem like they should all stick to the smae size standards, but they don't. A size medium in one brand, may actually be a size large in another.</p>
+               <h2 class="app_info_text_h app_info_text_h2">Find your SureFit size, download the app</h2>
+               <div class="app_info_btn_container">
+                   <img src="Images/google_play_badge-128x128.png" alt="Image" class="google_app_info_btn"/>
+                   <img src="Images/app_store.png" alt="Image" class="apple_app_info_btn"/>
+               </div>
+           </div>
+           <div class="app_info_image col-lg-6 col_6">
+               <img src="Images/Guidance%20image.jpg" class="img-responsive grid_display_img" alt="Image">
+           </div>
+        </div>
+    </section>
 
-				<div class="contact_wrapper">
-					<input class="input100" type="email" name="email" placeholder="Email*">
-				</div>
-				<div class="contact_wrapper">
-					<input class="input100" type="tel" name="telephone" placeholder="Phone Number">
-				</div>
+   <!------------------- Info Display Section -------------->
+<section class="info_display_section">
+        <div class="row info_display_container">
+            <div class="info_display_img_container col-lg-7 col_12">
+                <img src="Images/MBPro.jpg" class="img-responsive grid_display_img" alt="Image">
+            </div>
+            <div class="info_display_text col-lg-5">
+                <h1 class="info_display_text_h">Try before you buy.</h1>
+                <p class="info_display_text_p">Imagine a world where you could see yourself in that "perfect outfit" long before you go to the store or before it arrives in the mail?</p>
+                <p class="info_display_text_p">You now live in  that world!</p>
+                <p class="info_display_text_p">SureFit allows yo uto do just that from the comfort of anywhere. You can shop all the brands you love and have them virtually added to your selfie via our virtual fitting room.</p>
+            </div>
+        </div>
+    </section>
 
-				<div class="contact_wrapper validate_input" data-validate = "Message is required">
-					<textarea class="input100" name="message" placeholder="Comments*"></textarea>
-				</div>
+<!--------------- Industry Info Section ---------------->
+<!-- Only the inner content is wrapped in a container -->
+<section class="industry_info_section">
+    <div class="row industry_info_container">
+        
+    </div>
+</section>
 
-				<div class="contact_form_btn_container">
-					<div class="contact_form_button_wrapper">
-						<button class="contact100-form-btn modal_btn modal_btn_1 contact_wrap_btn">
-							Cancel
-						</button>
-						<button class="contact100-form-btn modal_btn modal_btn_2 contact_wrap_btn">
-							Send                                                                       
-						</button>
-					</div>
-				</div>
-			</form>
-		</div>
+<!-------------- Why SureFit Section ------------------------>
+<section class="w_sfit_section">
+    <div class="w_sfit_container container">
+            <div class="w_sfit_header">
+                <h1 class="w_sfit_h">Why SureFit?</h1>
+            </div>
+            <div class="w_sfit_info flex_container_2">
+                <div class="w_sfit_info_display flex_container_2 col-lg-5">
+                        <img src="Images/clock.svg" alt="Image" class="w_sfit_info_display_img"/>
+                    <div class="w_sfit_info_display_text">
+                        <h2 class="w_sfit_info_display_h">Access</h2>
+                        <p class="w_sfit_info_display_p">Shop without ever stepping foot in a store - anytime anywhere. Find your perfect fit and look from the palm of your hand.</p>
+                    </div>
+                </div>
+                <div class="w_sfit_info_display flex_container_2 col-lg-5">
+                        <img src="Images/share.svg" alt="Image" class="w_sfit_info_display_img"/>
+                    <div class="w_sfit_info_display_text">
+                        <h2 class="w_sfit_info_display_h">Share</h2>
+                        <p class="w_sfit_info_display_p">Share and create outfit looks with friends and family in your social community.</p>
+                    </div>
+                </div>
+                <div class="w_sfit_info_display flex_container_2 col-lg-5">
+                        <img src="Images/stylist.svg" alt="Image" class="w_sfit_info_display_img w_sfit_info_display_stylist"/>
+                    <div class="w_sfit_info_display_text">
+                        <h2 class="w_sfit_info_display_h">Try On</h2>
+                        <p class="w_sfit_info_display_p">Step into your virtual fitting room and style your selfie wearing outfits before you buy.</p>
+                    </div>
+                </div>
+                <div class="w_sfit_info_display flex_container_2 col-lg-5 no_padding">
+                        <img src="Images/coat%20hanger.svg" alt="Image" class="w_sfit_info_display_img w_sfit_info_display_hanger"/>
+                    <div class="w_sfit_info_display_text w_sfit_info_display_hanger_txt">
+                        <h2 class="w_sfit_info_display_h">Style</h2>
+                        <p class="w_sfit_info_display_p">Browse hundreds of today's hottest brands for the best in style - and your personal fit.</p>
+                    </div>
+                </div>
+                <div class="w_sfit_info_display flex_container_2 col-lg-5">
+                        <img src="Images/enhance.svg" alt="Image" class="w_sfit_info_display_img"/>
+                    <div class="w_sfit_info_display_text">
+                        <h2 class="w_sfit_info_display_h">Confidence</h2>
+                        <p class="w_sfit_info_display_p">Our SureFit technology measures your body so we can accurately recommend the best size for you. As always free shipping, free returns.</p>
+                    </div>
+                </div>
+                <div class="w_sfit_info_display flex_container_2 col-lg-5 extra_padding_r">
+                        <img src="Images/security.svg" alt="Image" class="w_sfit_info_display_img extra_padding_l"/>
+                    <div class="w_sfit_info_display_text ">
+                        <h2 class="w_sfit_info_display_h">Security</h2>
+                        <p class="w_sfit_info_display_p">We take your privacy seriously. Your selfie and personal information are completely secure, and we won't share your information with anyone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
 
-	</div>
+<!--------------------------- How it works Section ----------------------->
+<section class="how_it_works_section">
+       <div class="how_it_works_container container">
+           <div class="col-lg-5 col_6">
+               <img src="Images/Phones.jpg" alt="Image" />
+           </div>
+           <div class="how_it_works_display_info col-lg-7 col_6">
+               <div class="how_it_works_display_info_header">
+                   <h1 class="how_it_works_display_info_h">Fixing the fit means bringing technology into tyhe equation.</h1>
+                   <h1 class="how_it_works_display_info_h_2">Here's how it works</h1>
+               </div>
+               <div class="how_it_works_display_info_list">
+                   <div class="how_it_works_display_info_list_item how_it_works_display_info_list_btns">
+                      <p class="how_it_works_display_info_list_p"><span class="list_circle">1</span></p>
+                      <p class="how_it_works_display_info_list_p_2">Download the app</p>
+                      <div class="how_it_works_display_info_btn_container">
+                          <img src="Images/google_play.png" alt="Image" class="how_it_works_display_info_btn google_play_btn"/>
+                          <img src="Images/app_store.png" alt="Image" class="how_it_works_display_info_btn apple_btn"/>
+                      </div>
+                   </div>
+                   <div class="how_it_works_display_info_list_item">
+                       <p class="how_it_works_display_info_list_p"><span class="list_circle">2</span></p>
+                       <p class="how_it_works_display_info_list_p_2">Snap a selfie to get digitally measured in 60 seconds</p>
+                   </div>
+                    <div class="how_it_works_display_info_list_item">
+                       <p class="how_it_works_display_info_list_p"><span class="list_circle">3</span></p>
+                       <p class="how_it_works_display_info_list_p_2">Try on some clothes (virtually, of course)</p>
+                   </div>
+                   <div class="how_it_works_display_info_list_item">
+                       <p class="how_it_works_display_info_list_p"><span class="list_circle">4</span></p>
+                       <p class="how_it_works_display_info_list_p_2">See your SureFit&#8482; size &#38; fit guidance</p>
+                   </div>
+                   <div class="how_it_works_display_info_list_item">
+                       <p class="how_it_works_display_info_list_p"><span class="list_circle">5</span></p>
+                       <p class="how_it_works_display_info_list_p_2">Buy your favorite looks</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+</section>
 
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
 
 </body>
 </html>

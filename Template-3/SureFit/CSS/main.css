@@ -179,13 +179,6 @@ h1, h2, h3, h4, h5, p, input, label, button {
     
 }
 
-.grid_demo_display_image {
-    height: 600px;
-}
-.grid_demo_display_image_img {
-    width: 90%;
-}
-
 .grid_demo_info_btn_container {
     margin-top: 30px;
 }
